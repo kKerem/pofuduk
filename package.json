@@ -9,7 +9,8 @@
   "files": ["src", "dist/pet-avatars.json", "dist/human-avatars.json"],
   "scripts": {
     "build": "node scripts/build.mjs",
-    "sheets": "node scripts/build.mjs --sheets"
+    "sheets": "node scripts/build.mjs --sheets",
+    "docs": "node scripts/docs.mjs"
   },
   "engines": { "node": ">=22.18" }
 }

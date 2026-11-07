@@ -2,9 +2,41 @@
 
 Vetaryo için kil kıvamında avatarlar: fotoğrafı olmayan her hasta (evcil hayvan) ve her kişi (müşteri, personel) için seed'den her seferinde aynı avatarı üretir. Avatarlar bitmiş resimlerden değil, üst üste takılan SVG parçalarından oluşur.
 
+<p align="center"><img src="docs/hero.svg" width="100%" alt="Sekiz hayvan ve sekiz insan avatarı"></p>
+
 - **Hayvanlar:** 13 tür, 290 parça. Türler: kedi, köpek, kuş, tavşan, kemirgen, kirpi, gelincik, kaplumbağa, kertenkele, yılan, balık, çiftlik ve genel.
 - **İnsanlar:** 102 parça. Kadın ve erkek setleri, üç yaş grubu, 8 ten tonu, başörtüsü, personel kıyafetleri.
 - Bağımlılık yok. Parçalarda yalnızca `path`, `circle`, `ellipse`, `rect` var; filter, mask, clipPath ve degrade kullanılmıyor. Bu yüzden react-native-svg ile de aynen çizilir.
+
+## Örnekler
+
+### 13 tür
+
+Türü bilinmeyen hayvanlar için "Genel" var. Kedi ve köpekte en çok çeşit bulunuyor.
+
+<img src="docs/species.svg" width="100%" alt="13 hayvan türünden birer avatar">
+
+### Kedi ve köpek
+
+Her satır farklı seed'lerle üretildi. Kafa, kulak, desen, göz, ağız, renk ve aksesuar seed'den seçiliyor.
+
+<img src="docs/cats-dogs.svg" width="100%" alt="10 kedi ve 10 köpek avatarı">
+
+### İnsanlar
+
+Üstten alta: kadın, erkek ve personel (`role: 'staff'`). Yaş da seed'den geliyor; yaşlılarda kır saç, kel ve sakal daha sık çıkıyor. Personelde önlük ya da forma, stetoskop ve yaka kartı var.
+
+<img src="docs/humans.svg" width="100%" alt="10 kadın, 10 erkek ve 10 personel avatarı">
+
+### Kod ve çıktısı
+
+| Kod | Çıktı |
+| --- | :---: |
+| `renderPetAvatar('pet_7f3a', 'cat', pets)` | <img src="docs/example-pet.svg" width="72" alt="Kedi avatarı"> |
+| `renderHumanAvatar('owner_19c2', { gender: 'female' }, humans)` | <img src="docs/example-owner.svg" width="72" alt="Kadın avatarı"> |
+| `renderHumanAvatar('user_04be', { role: 'staff' }, humans)` | <img src="docs/example-vet.svg" width="72" alt="Personel avatarı"> |
+
+Bu görseller `node scripts/docs.mjs` ile üretilir.
 
 ## Dosyalar
 
@@ -15,6 +47,7 @@ Vetaryo için kil kıvamında avatarlar: fotoğrafı olmayan her hasta (evcil ha
 | `src/render.ts` | Birleştirici: `renderPetAvatar`, `renderHumanAvatar` |
 | `src/pets.mjs`, `src/humans.mjs`, `src/shared.mjs` | Parçaların kaynağı; JSON buradan üretilir |
 | `scripts/build.mjs` | JSON'u üretir, kuralları denetler, `dist/preview.html` yazar |
+| `scripts/docs.mjs` | README görsellerini (`docs/*.svg`) üretir |
 
 ## Kullanım
 
