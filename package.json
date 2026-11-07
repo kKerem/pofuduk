@@ -10,7 +10,8 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "sheets": "node scripts/build.mjs --sheets",
-    "docs": "node scripts/docs.mjs"
+    "docs": "node scripts/docs.mjs",
+    "site": "node scripts/site.mjs"
   },
   "engines": { "node": ">=22.18" }
 }

@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pofuduk · hayvan ve insan avatarları</title>
+<meta name="description" content="Kil kıvamında, seed'den üretilen hayvan ve insan SVG avatarları. 13 hayvan türü, kadın, erkek ve klinik personeli. Bağımlılık yok, MIT lisanslı.">
+<meta property="og:title" content="Pofuduk">
+<meta property="og:description" content="Kil kıvamında, seed'den üretilen hayvan ve insan SVG avatarları.">
+<link rel="icon" href="example-pet.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBFAF7; --ink:#1F1C22; --muted:#5E5866; --soft:#F2EEE7; --soft2:#EAE4DA;
+  --accent:#7209E8; --accent-ink:#fff; --band:#15131A; --band-ink:#F4F2F7; --band-muted:#ADA6B6;
+  --radius:28%;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+button{font:inherit;color:inherit;cursor:pointer}
+
+/* üst menü */
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px)}
+nav .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.brand .av{width:30px;height:30px}
+nav .links{display:flex;gap:24px;margin-left:auto;align-items:center}
+nav .links a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500}
+nav .links a:hover{color:var(--ink)}
+.gh{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff!important;padding:8px 14px;border-radius:999px}
+.gh svg{width:17px;height:17px;fill:currentColor}
+
+/* avatar kutusu */
+.av{display:block;border-radius:var(--radius);overflow:hidden;flex:none;line-height:0}
+.av svg{width:100%;height:100%;display:block}
+.av.round{border-radius:50%}
+
+/* giriş */
+.hero{padding:72px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+h1{font-size:clamp(44px,6.4vw,84px);line-height:1;letter-spacing:-.035em;margin:0 0 24px;font-weight:700}
+.lead{font-size:20px;color:var(--muted);margin:0 0 32px;max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:0}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.secondary{background:var(--soft2);color:var(--ink)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.hero-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.hero-grid .av{width:100%;aspect-ratio:1;transition:opacity .35s}
+.facts{display:flex;gap:40px;margin-top:40px;flex-wrap:wrap}
+.facts b{display:block;font-size:30px;letter-spacing:-.02em}
+.facts span{color:var(--muted);font-size:15px}
+
+section{padding:96px 0}
+h2{font-size:clamp(32px,4vw,48px);line-height:1.05;letter-spacing:-.03em;margin:0 0 16px;font-weight:700}
+.sub{color:var(--muted);font-size:18px;max-width:640px;margin:0 0 48px}
+
+/* deneme alanı */
+#dene{background:var(--soft)}
+.play{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:56px;align-items:start}
+.field{margin-bottom:26px}
+.field>label,.field>.lbl{display:block;font-size:14px;font-weight:600;margin-bottom:10px}
+.seed{width:100%;font:inherit;font-size:20px;padding:14px 18px;border-radius:16px;border:0;background:#fff;color:var(--ink);outline:2px solid transparent}
+.seed:focus{outline-color:var(--accent)}
+.hint{font-size:14px;color:var(--muted);margin-top:8px}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{background:#fff;border:0;border-radius:999px;padding:8px 15px;font-size:15px;font-weight:500}
+.seg button[aria-pressed=true]{background:var(--ink);color:#fff}
+.seg.big button{padding:11px 20px;font-size:16px;font-weight:600}
+.stage{display:flex;flex-direction:column;gap:28px}
+.stage-top{display:flex;gap:32px;align-items:flex-end;flex-wrap:wrap}
+.stage .main{width:240px;height:240px}
+.sizes{display:flex;flex-direction:column;gap:14px}
+.size-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:14px 18px;border-radius:18px;background:#fff}
+.size-row.dark{background:#1E1B24}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.actions .btn{padding:10px 18px;font-size:15px}
+.code{background:var(--band);color:var(--band-ink);border-radius:16px;padding:18px 22px;font-size:14.5px;overflow-x:auto;white-space:pre;margin:0}
+.code .k{color:#C9A7FF}.code .s{color:#A6E3A1}.code .c{color:#857E8E}
+.layers-title{font-size:14px;font-weight:600;margin:8px 0 12px}
+.layers{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px}
+.layers figure{margin:0;display:flex;flex-direction:column;gap:6px;align-items:center}
+.layers .av{width:76px;height:76px}
+.layers figcaption{font-size:12px;color:var(--muted)}
+.layers .plus{align-self:center;color:var(--muted);margin-top:-18px}
+
+/* türler */
+.species{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 56px}
+.sp h3{margin:0 0 12px;font-size:20px;letter-spacing:-.01em;display:flex;align-items:baseline;gap:10px}
+.sp h3 small{font-weight:400;color:var(--muted);font-size:14px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.row .av{width:62px;height:62px;cursor:pointer;transition:transform .15s}
+.row .av:hover{transform:scale(1.06)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.head .sub{margin:0}
+
+.people{display:flex;flex-direction:column;gap:28px}
+.people h3{margin:0 0 12px;font-size:20px}
+
+/* koyu bant */
+.band{background:var(--band);color:var(--band-ink)}
+.band .sub{color:var(--band-muted)}
+.band .code{background:#0C0B10;font-size:15px}
+.usage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.usage h3{font-size:18px;margin:0 0 12px}
+.usage p{color:var(--band-muted);margin:0 0 16px;font-size:16px}
+.usage code.inline{background:#2A2631;padding:2px 6px;border-radius:6px;font-size:14px;color:var(--band-ink)}
+
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.rules h3{font-size:19px;margin:0 0 8px}
+.rules p{margin:0;color:var(--muted);font-size:16px}
+
+footer{padding:48px 0 64px;color:var(--muted);font-size:15px}
+footer .wrap{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--muted)}
+footer .brand{color:var(--ink);font-size:17px}
+
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:15px;opacity:0;transition:.25s;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%)}
+
+@media (max-width:1060px){.play{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:900px){
+  .hero .wrap,.usage{grid-template-columns:minmax(0,1fr)}
+  .species{grid-template-columns:1fr}
+  .rules{grid-template-columns:1fr}
+  nav .links a:not(.gh){display:none}
+  .hero{padding:40px 0 64px}
+  section{padding:64px 0}
+}
+@media (max-width:480px){
+  .wrap{padding:0 16px}
+  .stage .main{width:180px;height:180px}
+  .row .av{width:52px;height:52px}
+  .hero-grid{gap:10px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-grid .av{transition:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#"><span class="av" id="logo"></span>Pofuduk</a>
+    <div class="links">
+      <a href="#dene">Dene</a>
+      <a href="#turler">Türler</a>
+      <a href="#insanlar">İnsanlar</a>
+      <a href="#kullanim">Kullanım</a>
+      <a class="gh" href="https://github.com/kKerem/pofuduk"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Fotoğrafı olmayan herkese bir yüz.</h1>
+      <p class="lead">Pofuduk, veteriner kliniği yazılımları için kil kıvamında avatarlar üretir. Hastanın ya da kişinin kimliğini verin; her seferinde aynı avatar gelir.</p>
+      <div class="cta">
+        <a class="btn primary" href="#dene">Hemen dene</a>
+        <a class="btn secondary" href="https://github.com/kKerem/pofuduk"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub'da gör</a>
+      </div>
+      <div class="facts">
+        <div><b>13</b><span>hayvan türü</span></div>
+        <div><b>392</b><span>SVG parçası</span></div>
+        <div><b>0</b><span>bağımlılık</span></div>
+      </div>
+    </div>
+    <div class="hero-grid" id="heroGrid" aria-label="Örnek avatarlar"></div>
+  </div>
+</header>
+
+<section id="dene">
+  <div class="wrap">
+    <h2>Dene</h2>
+    <p class="sub">Bir isim ya da kimlik yaz. Aynı yazı her zaman aynı avatarı verir; tek harf değişince bambaşka biri çıkar.</p>
+    <div class="play">
+      <div>
+        <div class="field">
+          <div class="lbl">Ne çizilsin?</div>
+          <div class="seg big" id="kind">
+            <button data-v="pet" aria-pressed="true">Hayvan</button>
+            <button data-v="human" aria-pressed="false">İnsan</button>
+          </div>
+        </div>
+        <div class="field">
+          <label for="seed">Seed</label>
+          <input class="seed" id="seed" value="Pamuk" autocomplete="off" spellcheck="false">
+          <div class="hint">Uygulamada genelde hasta ya da kullanıcı kimliği verilir.</div>
+        </div>
+        <div class="field" id="petOpts">
+          <div class="lbl">Tür</div>
+          <div class="seg" id="species"></div>
+        </div>
+        <div id="humanOpts" hidden>
+          <div class="field">
+            <div class="lbl">Cinsiyet</div>
+            <div class="seg" id="gender">
+              <button data-v="" aria-pressed="true">Seed seçsin</button>
+              <button data-v="female" aria-pressed="false">Kadın</button>
+              <button data-v="male" aria-pressed="false">Erkek</button>
+            </div>
+          </div>
+          <div class="field">
+            <div class="lbl">Rol</div>
+            <div class="seg" id="role">
+              <button data-v="customer" aria-pressed="true">Hayvan sahibi</button>
+              <button data-v="staff" aria-pressed="false">Klinik personeli</button>
+            </div>
+          </div>
+          <div class="field">
+            <div class="lbl">Yaş</div>
+            <div class="seg" id="age">
+              <button data-v="" aria-pressed="true">Seed seçsin</button>
+              <button data-v="young" aria-pressed="false">Genç</button>
+              <button data-v="middle" aria-pressed="false">Orta yaş</button>
+              <button data-v="old" aria-pressed="false">Yaşlı</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-top">
+          <span class="av main" id="main"></span>
+          <div class="sizes">
+            <div class="size-row" id="sizesLight"></div>
+            <div class="size-row dark" id="sizesDark"></div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn primary" id="shuffle">Rastgele</button>
+          <button class="btn secondary" id="download">SVG indir</button>
+          <button class="btn secondary" id="copy">SVG'yi kopyala</button>
+        </div>
+        <pre class="code" id="code"></pre>
+        <div>
+          <div class="layers-title">Katman katman</div>
+          <div class="layers" id="layers"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="turler">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <h2>13 tür</h2>
+        <p class="sub">Kedi ve köpekte en çok çeşit var. Türü bilinmeyen hastalar için "Genel" kullanılır. Bir avatara tıklarsan yukarıda açılır.</p>
+      </div>
+      <button class="btn secondary" id="shuffleSpecies">Karıştır</button>
+    </div>
+    <div class="species" id="speciesGrid"></div>
+  </div>
+</section>
+
+<section id="insanlar" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <h2>İnsanlar</h2>
+        <p class="sub">Hayvan sahipleri ve klinik personeli. Üç yaş grubu, sekiz ten tonu, başörtüsü seçeneği. Personelde önlük ya da forma, stetoskop ve yaka kartı var.</p>
+      </div>
+      <button class="btn secondary" id="shufflePeople">Karıştır</button>
+    </div>
+    <div class="people" id="people"></div>
+  </div>
+</section>
+
+<section class="band" id="kullanim">
+  <div class="wrap">
+    <h2>Kullanım</h2>
+    <p class="sub">Tek dosyalık birleştirici ve iki JSON kütüphanesi. Çıktı düz bir SVG metni; web'de img etiketine, React Native'de SvgXml'e verilir.</p>
+    <div class="usage">
+      <div>
+        <h3>Kurulum</h3>
+        <p>Şimdilik doğrudan repodan alınıyor.</p>
+<pre class="code"><span class="c"># repoyu indir</span>
+git clone https://github.com/kKerem/pofuduk
+
+<span class="c"># JSON'u yeniden üret (isteğe bağlı)</span>
+node scripts/build.mjs</pre>
+      </div>
+      <div>
+        <h3>Çizim</h3>
+        <p>Seed olarak kalıcı bir kimlik verin, isim değişse de avatar değişmez.</p>
+<pre class="code"><span class="k">import</span> pets <span class="k">from</span> <span class="s">'pofuduk/dist/pet-avatars.json'</span>
+<span class="k">import</span> humans <span class="k">from</span> <span class="s">'pofuduk/dist/human-avatars.json'</span>
+<span class="k">import</span> { renderPetAvatar, renderHumanAvatar } <span class="k">from</span> <span class="s">'pofuduk/src/render'</span>
+
+renderPetAvatar(pet.id, <span class="s">'cat'</span>, pets)
+renderHumanAvatar(owner.id, { gender: <span class="s">'female'</span> }, humans)
+renderHumanAvatar(user.id, { role: <span class="s">'staff'</span> }, humans)</pre>
+      </div>
+      <div>
+        <h3>Seçimi saklamak</h3>
+        <p>Önce seç, istersen bir parçayı elle değiştir, sonra çiz. Örneğin ameliyattan çıkan hastaya konik yaka.</p>
+<pre class="code"><span class="k">const</span> choice = selectPetAvatar(pet.id, <span class="s">'dog'</span>, pets)
+choice.parts.accessory = <span class="s">'acc-cone'</span>
+<span class="k">const</span> svg = composePetAvatar(choice, pets)</pre>
+      </div>
+      <div>
+        <h3>Ekrana basmak</h3>
+        <p>Web'de data URL, React Native'de react-native-svg yeterli. Parçalarda filter, mask ya da degrade yok.</p>
+<pre class="code"><span class="c">// web</span>
+&lt;img src={<span class="s">`data:image/svg+xml;utf8,${encodeURIComponent(svg)}`</span>} /&gt;
+
+<span class="c">// React Native</span>
+&lt;SvgXml xml={svg} width={40} height={40} /&gt;</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Nasıl çalışır?</h2>
+    <p class="sub">Avatarlar hazır resim değil. Her biri aynı 256×256 tuvalde çizilmiş parçaların üst üste takılmasıyla oluşur.</p>
+    <div class="rules">
+      <div><h3>Seed'den seçim</h3><p>Seed bir sayıya çevrilir, o sayı da sabit bir rastgele dizi başlatır. Kafa, kulak, desen, göz ve renk bu diziden sırayla seçilir.</p></div>
+      <div><h3>Renk yer tutucuları</h3><p>Parçalar renk taşımaz; {{fur}}, {{skin}}, {{hair}} gibi yer tutucular paletten doldurulur. Koyu tüylü hayvanlarda göz akı olan gözler seçilir.</p></div>
+      <div><h3>Kil hissi</h3><p>Her şekil üç tondan oluşur: koyu gövde, biraz kaymış ana renk ve açık bir parlama. Degrade ya da filtre yok, küçük boyutta da net kalır.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#"><span class="av" id="logo2" style="width:26px;height:26px"></span>Pofuduk</a>
+    <span>MIT lisanslı · Vetaryo için yapıldı</span>
+    <a href="https://github.com/kKerem/pofuduk" style="margin-left:auto">github.com/kKerem/pofuduk</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script type="module">
+import { renderPetAvatar, renderHumanAvatar, selectPetAvatar, composePetAvatar, selectHumanAvatar, composeHumanAvatar } from './render.js';
+
+const [pets, humans] = await Promise.all([
+  fetch('pet-avatars.json').then(r => r.json()),
+  fetch('human-avatars.json').then(r => r.json()),
+]);
+
+const NAMES = {
+  cat: 'Kedi', dog: 'Köpek', bird: 'Kuş', rabbit: 'Tavşan', rodent: 'Kemirgen', hedgehog: 'Kirpi', ferret: 'Gelincik',
+  turtle: 'Kaplumbağa', lizard: 'Kertenkele', snake: 'Yılan', fish: 'Balık', farm: 'Çiftlik', other: 'Genel',
+};
+const NOTES = {
+  cat: 'kısa ve uzun tüylü, sfenks dahil', dog: 'basık, orta ve uzun burunlu', bird: 'muhabbet kuşu, papağan, kanarya',
+  rabbit: 'dik ve sarkık kulaklı', rodent: 'hamster, guinea pig, sıçan', hedgehog: '', ferret: 'maskeli',
+  turtle: 'kabuk dahil', lizard: 'iguana, sakallı ejder', snake: 'kangal gövde', fish: 'yandan', farm: 'keçi, koyun, at', other: 'türü bilinmeyen',
+};
+const LAYER_NAMES = {
+  background: 'arka plan', head: 'kafa', ears: 'kulak', pattern: 'desen', eyes: 'göz', nose: 'burun', mouth: 'ağız',
+  whiskers: 'bıyık', accessory: 'aksesuar', body: 'gövde', hairBack: 'arka saç', ageLines: 'yaş çizgisi',
+  eyebrows: 'kaş', facialHair: 'sakal', hairFront: 'saç', glasses: 'gözlük',
+};
+const SEED_NAMES = ['Pamuk','Boncuk','Zeytin','Fıstık','Tarçın','Maviş','Karamel','Duman','Limon','Paşa','Şans','Bulut','Mırmır','Leblebi','Badem','Kömür','Lokum','Sütlaç','Tombik','Cesur','Minnoş','Çakıl','Ayva','Pırasa'];
+const PEOPLE_NAMES = ['Ayşe','Mehmet','Elif','Can','Zeynep','Mert','Deniz','Selin','Burak','Ece','Hakan','Gül','Emre','Nur','Kerem','Derya','Oğuz','Sena','Tolga','Melis'];
+
+const pet = (seed, sp) => renderPetAvatar(seed, sp, pets);
+const human = (seed, opts) => renderHumanAvatar(seed, opts, humans);
+const rid = () => Math.random().toString(36).slice(2, 8);
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html) e.innerHTML = html; return e; };
+const avatar = (svg, size, round) => { const a = el('span', 'av' + (round ? ' round' : ''), svg); if (size) { a.style.width = a.style.height = size + 'px'; } return a; };
+const esc = (s) => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]);
+
+document.getElementById('logo').innerHTML = pet('Pofuduk', 'cat');
+document.getElementById('logo2').innerHTML = pet('Pofuduk', 'cat');
+
+// ---- giriş ızgarası: ara ara bir avatar değişir
+const heroGrid = document.getElementById('heroGrid');
+const speciesKeys = Object.keys(pets.species);
+const heroPick = (i) => (i % 3 === 1)
+  ? human(rid(), {})
+  : pet(rid(), ['cat', 'dog', 'cat', 'dog', 'rabbit', 'bird', 'hedgehog', 'ferret', 'rodent', 'turtle'][Math.floor(Math.random() * 10)]);
+const heroCells = Array.from({ length: 12 }, (_, i) => { const a = avatar(heroPick(i)); heroGrid.append(a); return a; });
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  setInterval(() => {
+    const i = Math.floor(Math.random() * heroCells.length), cell = heroCells[i];
+    cell.style.opacity = 0;
+    setTimeout(() => { cell.innerHTML = heroPick(i); cell.style.opacity = 1; }, 350);
+  }, 1600);
+}
+
+// ---- deneme alanı
+const state = { kind: 'pet', seed: 'Pamuk', species: 'cat', gender: '', role: 'customer', age: '' };
+const $ = (id) => document.getElementById(id);
+const speciesSeg = $('species');
+for (const k of speciesKeys) { const b = el('button'); b.textContent = NAMES[k] ?? k; b.dataset.v = k; speciesSeg.append(b); }
+
+function bindSeg(id, key) {
+  const seg = $(id);
+  seg.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    state[key] = b.dataset.v; draw();
+  });
+}
+bindSeg('kind', 'kind'); bindSeg('species', 'species'); bindSeg('gender', 'gender'); bindSeg('role', 'role'); bindSeg('age', 'age');
+$('seed').addEventListener('input', (e) => { state.seed = e.target.value; draw(); });
+
+function humanOpts() {
+  const o = {};
+  if (state.gender) o.gender = state.gender;
+  if (state.role === 'staff') o.role = 'staff';
+  if (state.age) o.age = state.age;
+  return o;
+}
+function current() {
+  if (state.kind === 'pet') {
+    const choice = selectPetAvatar(state.seed, state.species, pets);
+    return { choice, svg: composePetAvatar(choice, pets), compose: (c) => composePetAvatar(c, pets), order: pets.layerOrder };
+  }
+  const choice = selectHumanAvatar(state.seed, humanOpts(), humans);
+  return { choice, svg: composeHumanAvatar(choice, humans), compose: (c) => composeHumanAvatar(c, humans), order: humans.layerOrder };
+}
+function codeLine() {
+  const s = `<span class="s">'${esc(state.seed.replace(/'/g, "\\'"))}'</span>`;
+  if (state.kind === 'pet') return `renderPetAvatar(${s}, <span class="s">'${state.species}'</span>, pets)`;
+  const o = humanOpts();
+  const parts = Object.entries(o).map(([k, v]) => `${k}: <span class="s">'${v}'</span>`);
+  return `renderHumanAvatar(${s}, ${parts.length ? `{ ${parts.join(', ')} }` : '{}'}, humans)`;
+}
+let lastSvg = '';
+function draw() {
+  for (const [id, key] of [['kind', 'kind'], ['species', 'species'], ['gender', 'gender'], ['role', 'role'], ['age', 'age']]) {
+    $(id).querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === state[key])));
+  }
+  $('petOpts').hidden = state.kind !== 'pet';
+  $('humanOpts').hidden = state.kind !== 'human';
+  if ($('seed').value !== state.seed) $('seed').value = state.seed;
+
+  const { choice, svg, compose, order } = current();
+  lastSvg = svg;
+  $('main').innerHTML = svg;
+  for (const id of ['sizesLight', 'sizesDark']) {
+    const row = $(id); row.innerHTML = '';
+    row.append(avatar(svg, 96), avatar(svg, 64, true), avatar(svg, 40, true), avatar(svg, 24));
+  }
+  $('code').innerHTML = codeLine();
+
+  // katmanları sırayla ekleyerek göster
+  const layers = $('layers'); layers.innerHTML = '';
+  const used = order.filter(l => choice.parts[l]);
+  used.forEach((layer, i) => {
+    const partial = { ...choice, parts: Object.fromEntries(used.slice(0, i + 1).map(l => [l, choice.parts[l]])) };
+    if (i) layers.append(el('span', 'plus', '+'));
+    const fig = el('figure');
+    fig.append(avatar(compose(partial)), el('figcaption', '', LAYER_NAMES[layer] ?? layer));
+    layers.append(fig);
+  });
+}
+
+const toast = (msg) => { const t = $('toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('on'), 1600); };
+$('shuffle').addEventListener('click', () => {
+  const list = state.kind === 'pet' ? SEED_NAMES : PEOPLE_NAMES;
+  state.seed = list[Math.floor(Math.random() * list.length)] + (Math.random() < .5 ? '' : ' ' + Math.floor(Math.random() * 90 + 10));
+  draw();
+});
+$('download').addEventListener('click', () => {
+  const a = el('a'); a.href = URL.createObjectURL(new Blob([lastSvg], { type: 'image/svg+xml' }));
+  a.download = `pofuduk-${(state.seed || 'avatar').replace(/[^\p{L}\p{N}_-]+/gu, '-')}.svg`; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+});
+$('copy').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(lastSvg); toast('SVG panoya kopyalandı'); } catch { toast('Kopyalanamadı'); }
+});
+
+// ---- türler
+function drawSpecies() {
+  const grid = $('speciesGrid'); grid.innerHTML = '';
+  for (const k of speciesKeys) {
+    const box = el('div', 'sp');
+    box.append(el('h3', '', `${NAMES[k] ?? k}${NOTES[k] ? ` <small>${NOTES[k]}</small>` : ''}`));
+    const row = el('div', 'row');
+    for (let i = 0; i < 7; i++) {
+      const seed = rid();
+      const a = avatar(pet(seed, k)); a.title = seed;
+      a.addEventListener('click', () => { Object.assign(state, { kind: 'pet', species: k, seed }); draw(); $('dene').scrollIntoView(); });
+      row.append(a);
+    }
+    box.append(row); grid.append(box);
+  }
+}
+function drawPeople() {
+  const box = $('people'); box.innerHTML = '';
+  for (const [title, opts] of [['Kadın', { gender: 'female' }], ['Erkek', { gender: 'male' }], ['Klinik personeli', { role: 'staff' }]]) {
+    const wrap = el('div'); wrap.append(el('h3', '', title));
+    const row = el('div', 'row');
+    for (let i = 0; i < 14; i++) {
+      const seed = rid();
+      const a = avatar(human(seed, opts)); a.title = seed;
+      a.addEventListener('click', () => {
+        Object.assign(state, { kind: 'human', seed, gender: opts.gender ?? '', role: opts.role ?? 'customer', age: '' });
+        draw(); $('dene').scrollIntoView();
+      });
+      row.append(a);
+    }
+    wrap.append(row); box.append(wrap);
+  }
+}
+$('shuffleSpecies').addEventListener('click', drawSpecies);
+$('shufflePeople').addEventListener('click', drawPeople);
+
+draw(); drawSpecies(); drawPeople();
+</script>
+</body>
+</html>

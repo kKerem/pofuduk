@@ -1,0 +1,2453 @@
+{
+ "name": "pofuduk/pets",
+ "version": "1.0.0",
+ "viewBox": 256,
+ "faceOrigin": {
+  "x": 128,
+  "y": 150
+ },
+ "layerOrder": [
+  "background",
+  "head",
+  "ears",
+  "pattern",
+  "eyes",
+  "nose",
+  "mouth",
+  "whiskers",
+  "accessory"
+ ],
+ "faceLayers": [
+  "eyes",
+  "nose",
+  "mouth",
+  "whiskers"
+ ],
+ "muzzleLayers": [
+  "nose",
+  "mouth",
+  "whiskers"
+ ],
+ "palettes": {
+  "cat": [
+   {
+    "id": "orange",
+    "fur": "#E3A066",
+    "furDark": "#C27B45",
+    "furLight": "#F5DCC0",
+    "weight": 3
+   },
+   {
+    "id": "cream",
+    "fur": "#EAD9BF",
+    "furDark": "#CDB596",
+    "furLight": "#F7EEDF",
+    "weight": 2
+   },
+   {
+    "id": "gray",
+    "fur": "#A9AAB0",
+    "furDark": "#7F8188",
+    "furLight": "#DADBDF",
+    "weight": 2
+   },
+   {
+    "id": "black",
+    "fur": "#57525A",
+    "furDark": "#3A363D",
+    "furLight": "#8E8992",
+    "weight": 2,
+    "dark": true
+   },
+   {
+    "id": "black-white",
+    "fur": "#4F4B4E",
+    "furDark": "#36333A",
+    "furLight": "#F3EFEA",
+    "weight": 2,
+    "dark": true
+   },
+   {
+    "id": "white",
+    "fur": "#F3EFE9",
+    "furDark": "#D6CEC3",
+    "furLight": "#FFFFFF",
+    "weight": 2
+   },
+   {
+    "id": "brown-tabby",
+    "fur": "#A88464",
+    "furDark": "#7D5F45",
+    "furLight": "#DCC6AB",
+    "weight": 2
+   },
+   {
+    "id": "blue-gray",
+    "fur": "#8E98A6",
+    "furDark": "#6D7684",
+    "furLight": "#C7CED8",
+    "weight": 1
+   },
+   {
+    "id": "hairless",
+    "fur": "#E8C6B4",
+    "furDark": "#C79C88",
+    "furLight": "#F5E2D7",
+    "weight": 0.5
+   }
+  ],
+  "dog": [
+   {
+    "id": "cream",
+    "fur": "#E8D3AE",
+    "furDark": "#C9AF86",
+    "furLight": "#F6EBD7",
+    "weight": 2
+   },
+   {
+    "id": "golden",
+    "fur": "#DDA65F",
+    "furDark": "#B37F3E",
+    "furLight": "#F2D5A8",
+    "weight": 3
+   },
+   {
+    "id": "fawn",
+    "fur": "#DCC3A0",
+    "furDark": "#8E7458",
+    "furLight": "#F0E2CC",
+    "weight": 2
+   },
+   {
+    "id": "brown",
+    "fur": "#9A6B4B",
+    "furDark": "#714B32",
+    "furLight": "#CDA88A",
+    "weight": 2
+   },
+   {
+    "id": "black",
+    "fur": "#4A4646",
+    "furDark": "#302D2E",
+    "furLight": "#C19C76",
+    "weight": 2,
+    "dark": true
+   },
+   {
+    "id": "white-brown",
+    "fur": "#F1EAE0",
+    "furDark": "#A87652",
+    "furLight": "#FFFFFF",
+    "weight": 2
+   },
+   {
+    "id": "red",
+    "fur": "#D99A62",
+    "furDark": "#B0713C",
+    "furLight": "#F7E6D2",
+    "weight": 2
+   },
+   {
+    "id": "gray",
+    "fur": "#A3A9B0",
+    "furDark": "#7A818A",
+    "furLight": "#D7DBDF",
+    "weight": 1
+   }
+  ],
+  "bird": [
+   {
+    "id": "green",
+    "fur": "#8DBE6E",
+    "furDark": "#6A9A50",
+    "furLight": "#EFE08A",
+    "weight": 3
+   },
+   {
+    "id": "blue",
+    "fur": "#7FA9D6",
+    "furDark": "#5D86B3",
+    "furLight": "#F2F0EA",
+    "weight": 3
+   },
+   {
+    "id": "yellow",
+    "fur": "#EBD27A",
+    "furDark": "#C9AE52",
+    "furLight": "#F7EDBD",
+    "weight": 2
+   },
+   {
+    "id": "gray",
+    "fur": "#A8A6A6",
+    "furDark": "#7F7C7C",
+    "furLight": "#E7E4E0",
+    "weight": 2
+   },
+   {
+    "id": "cockatiel",
+    "fur": "#C9C4BC",
+    "furDark": "#9E988F",
+    "furLight": "#F2E2A0",
+    "weight": 2
+   },
+   {
+    "id": "peach",
+    "fur": "#E8B48A",
+    "furDark": "#C98E62",
+    "furLight": "#F6E0C8",
+    "weight": 1
+   }
+  ],
+  "rabbit": [
+   {
+    "id": "white",
+    "fur": "#F3EFE9",
+    "furDark": "#D6CEC3",
+    "furLight": "#FFFFFF",
+    "weight": 2
+   },
+   {
+    "id": "gray",
+    "fur": "#B5B1AE",
+    "furDark": "#8D8885",
+    "furLight": "#E0DDDA",
+    "weight": 2
+   },
+   {
+    "id": "brown",
+    "fur": "#B08A6A",
+    "furDark": "#87654A",
+    "furLight": "#E1CDB8",
+    "weight": 2
+   },
+   {
+    "id": "cream",
+    "fur": "#E9D6B8",
+    "furDark": "#CBB492",
+    "furLight": "#F6ECDC",
+    "weight": 2
+   },
+   {
+    "id": "orange",
+    "fur": "#DDAA7A",
+    "furDark": "#B98552",
+    "furLight": "#F3DCC2",
+    "weight": 1
+   },
+   {
+    "id": "black",
+    "fur": "#55504F",
+    "furDark": "#3A3636",
+    "furLight": "#9A9391",
+    "weight": 1,
+    "dark": true
+   }
+  ],
+  "rodent": [
+   {
+    "id": "golden",
+    "fur": "#E2B47A",
+    "furDark": "#C08E55",
+    "furLight": "#F7E7CF",
+    "weight": 3
+   },
+   {
+    "id": "cream",
+    "fur": "#EAD9BF",
+    "furDark": "#CDB596",
+    "furLight": "#F8F0E2",
+    "weight": 2
+   },
+   {
+    "id": "gray",
+    "fur": "#B9B3AE",
+    "furDark": "#8F8984",
+    "furLight": "#E4E0DC",
+    "weight": 2
+   },
+   {
+    "id": "white",
+    "fur": "#F4F0EA",
+    "furDark": "#D8D0C5",
+    "furLight": "#FFFFFF",
+    "weight": 2
+   },
+   {
+    "id": "brown",
+    "fur": "#A57C5C",
+    "furDark": "#7E5C42",
+    "furLight": "#DCC7B0",
+    "weight": 2
+   },
+   {
+    "id": "black",
+    "fur": "#5A5452",
+    "furDark": "#3E3937",
+    "furLight": "#B9AEA6",
+    "weight": 1,
+    "dark": true
+   }
+  ],
+  "hedgehog": [
+   {
+    "id": "brown",
+    "fur": "#E6CFAE",
+    "furDark": "#8A6B52",
+    "furLight": "#F4E6D2",
+    "weight": 3
+   },
+   {
+    "id": "dark",
+    "fur": "#DCC5A6",
+    "furDark": "#5E5048",
+    "furLight": "#EFE2CF",
+    "weight": 2
+   },
+   {
+    "id": "pale",
+    "fur": "#F2E6D8",
+    "furDark": "#C7B39C",
+    "furLight": "#FBF4EB",
+    "weight": 1
+   },
+   {
+    "id": "cinnamon",
+    "fur": "#EBCFAE",
+    "furDark": "#B07E55",
+    "furLight": "#F7E8D6",
+    "weight": 1
+   }
+  ],
+  "ferret": [
+   {
+    "id": "sable",
+    "fur": "#E8D7BC",
+    "furDark": "#6E5644",
+    "furLight": "#F7EEDF",
+    "weight": 3
+   },
+   {
+    "id": "albino",
+    "fur": "#F4EEE2",
+    "furDark": "#D9CDBB",
+    "furLight": "#FFFFFF",
+    "weight": 2
+   },
+   {
+    "id": "champagne",
+    "fur": "#E3C9A3",
+    "furDark": "#B08F6A",
+    "furLight": "#F4E6CF",
+    "weight": 2
+   },
+   {
+    "id": "black-sable",
+    "fur": "#D8C7AE",
+    "furDark": "#4F443D",
+    "furLight": "#F2E9DA",
+    "weight": 1
+   },
+   {
+    "id": "silver",
+    "fur": "#DCDAD6",
+    "furDark": "#76716D",
+    "furLight": "#F4F2EF",
+    "weight": 1
+   }
+  ],
+  "turtle": [
+   {
+    "id": "green",
+    "fur": "#A3B67F",
+    "furDark": "#71874F",
+    "furLight": "#D3DDB6",
+    "weight": 3
+   },
+   {
+    "id": "olive",
+    "fur": "#B4AE7A",
+    "furDark": "#857F4E",
+    "furLight": "#DEDAB5",
+    "weight": 2
+   },
+   {
+    "id": "tortoise",
+    "fur": "#C7AE85",
+    "furDark": "#8C6E4A",
+    "furLight": "#E6D7BB",
+    "weight": 2
+   },
+   {
+    "id": "slate",
+    "fur": "#8FA393",
+    "furDark": "#62786A",
+    "furLight": "#C8D4C9",
+    "weight": 1
+   }
+  ],
+  "lizard": [
+   {
+    "id": "green",
+    "fur": "#9CBF7E",
+    "furDark": "#6E9455",
+    "furLight": "#D6E5BF",
+    "weight": 3
+   },
+   {
+    "id": "sand",
+    "fur": "#DDB98A",
+    "furDark": "#B08B5E",
+    "furLight": "#F2DFC2",
+    "weight": 3
+   },
+   {
+    "id": "orange",
+    "fur": "#E2A46C",
+    "furDark": "#B87A45",
+    "furLight": "#F4D7B6",
+    "weight": 1
+   },
+   {
+    "id": "gray-green",
+    "fur": "#A6AE98",
+    "furDark": "#7A8270",
+    "furLight": "#D6DACB",
+    "weight": 1
+   }
+  ],
+  "snake": [
+   {
+    "id": "green",
+    "fur": "#9FC08A",
+    "furDark": "#729561",
+    "furLight": "#D5E5C9",
+    "weight": 2
+   },
+   {
+    "id": "corn",
+    "fur": "#E3A27A",
+    "furDark": "#C0784F",
+    "furLight": "#F3D2B8",
+    "weight": 2
+   },
+   {
+    "id": "python",
+    "fur": "#B59A74",
+    "furDark": "#6F5A43",
+    "furLight": "#E6D7BE",
+    "weight": 2
+   },
+   {
+    "id": "gray",
+    "fur": "#A9A9A4",
+    "furDark": "#7B7B76",
+    "furLight": "#D8D8D3",
+    "weight": 1
+   },
+   {
+    "id": "banana",
+    "fur": "#EAD58C",
+    "furDark": "#C9B062",
+    "furLight": "#F6EBC4",
+    "weight": 1
+   }
+  ],
+  "fish": [
+   {
+    "id": "goldfish",
+    "fur": "#EBA066",
+    "furDark": "#C9783F",
+    "furLight": "#F7D7B3",
+    "weight": 3
+   },
+   {
+    "id": "blue",
+    "fur": "#86AACB",
+    "furDark": "#5E84A9",
+    "furLight": "#D3E2EE",
+    "weight": 2
+   },
+   {
+    "id": "yellow",
+    "fur": "#EDD177",
+    "furDark": "#C8AA4E",
+    "furLight": "#F7EBC0",
+    "weight": 2
+   },
+   {
+    "id": "coral",
+    "fur": "#E58E7E",
+    "furDark": "#C26A5A",
+    "furLight": "#F6CFC5",
+    "weight": 2
+   },
+   {
+    "id": "teal",
+    "fur": "#7DB5AC",
+    "furDark": "#56908A",
+    "furLight": "#CFE5E1",
+    "weight": 2
+   },
+   {
+    "id": "koi",
+    "fur": "#F4EDE4",
+    "furDark": "#E0945A",
+    "furLight": "#FFFFFF",
+    "weight": 1
+   }
+  ],
+  "farm": [
+   {
+    "id": "white",
+    "fur": "#F1ECE4",
+    "furDark": "#D3C9BB",
+    "furLight": "#FFFFFF",
+    "weight": 3
+   },
+   {
+    "id": "cream",
+    "fur": "#E8D8BE",
+    "furDark": "#C9B493",
+    "furLight": "#F6EEDF",
+    "weight": 2
+   },
+   {
+    "id": "brown",
+    "fur": "#A47B5A",
+    "furDark": "#7A5539",
+    "furLight": "#D9C4AA",
+    "weight": 2
+   },
+   {
+    "id": "chestnut",
+    "fur": "#B5703F",
+    "furDark": "#8A5029",
+    "furLight": "#E3C3A3",
+    "weight": 2
+   },
+   {
+    "id": "black",
+    "fur": "#565150",
+    "furDark": "#3B3736",
+    "furLight": "#E9E1D5",
+    "weight": 1,
+    "dark": true
+   },
+   {
+    "id": "gray",
+    "fur": "#ABA8A4",
+    "furDark": "#84817D",
+    "furLight": "#DDDAD6",
+    "weight": 1
+   }
+  ],
+  "other": [
+   {
+    "id": "warm-gray",
+    "fur": "#B9AFA6",
+    "furDark": "#958A80",
+    "furLight": "#DDD5CD",
+    "weight": 2
+   },
+   {
+    "id": "sand",
+    "fur": "#D9BF98",
+    "furDark": "#B89C73",
+    "furLight": "#EEDFC6",
+    "weight": 2
+   },
+   {
+    "id": "cocoa",
+    "fur": "#9C7A62",
+    "furDark": "#775A46",
+    "furLight": "#C9AE97",
+    "weight": 2
+   },
+   {
+    "id": "cream",
+    "fur": "#EADCC8",
+    "furDark": "#CDBBA3",
+    "furLight": "#F6EEE2",
+    "weight": 2
+   },
+   {
+    "id": "sage",
+    "fur": "#AAB59A",
+    "furDark": "#86926F",
+    "furLight": "#D2DAC6",
+    "weight": 1
+   },
+   {
+    "id": "slate",
+    "fur": "#9AA3AE",
+    "furDark": "#77818D",
+    "furLight": "#C9CFD6",
+    "weight": 1
+   }
+  ]
+ },
+ "backgroundColors": [
+  {
+   "id": "cream",
+   "hex": "#F8F1E5",
+   "weight": 3
+  },
+  {
+   "id": "lilac",
+   "hex": "#F1E8FD",
+   "weight": 2
+  },
+  {
+   "id": "lavender",
+   "hex": "#E9DDFB",
+   "weight": 1
+  },
+  {
+   "id": "mist",
+   "hex": "#F5F1FC",
+   "weight": 1
+  },
+  {
+   "id": "sage",
+   "hex": "#E5EEDF",
+   "weight": 2
+  },
+  {
+   "id": "sky",
+   "hex": "#E2ECF4",
+   "weight": 2
+  },
+  {
+   "id": "peach",
+   "hex": "#F8E4D8",
+   "weight": 2
+  },
+  {
+   "id": "sand",
+   "hex": "#EFE7DA",
+   "weight": 1
+  }
+ ],
+ "accentColors": [
+  "#5E9C94",
+  "#D9775B",
+  "#45597A",
+  "#D3A13F",
+  "#C96F7E",
+  "#8BA06B"
+ ],
+ "backgrounds": [
+  {
+   "id": "bg-plain",
+   "svg": "<g><rect width=\"256\" height=\"256\" fill=\"{{bg}}\"/></g>",
+   "weight": 2
+  },
+  {
+   "id": "bg-ground",
+   "svg": "<g><rect width=\"256\" height=\"256\" fill=\"{{bg}}\"/><ellipse cx=\"128\" cy=\"246\" rx=\"86\" ry=\"12\" fill=\"#44403C\" opacity=\"0.07\"/></g>",
+   "weight": 4
+  },
+  {
+   "id": "bg-halo",
+   "svg": "<g><rect width=\"256\" height=\"256\" fill=\"{{bg}}\"/><circle cx=\"128\" cy=\"132\" r=\"108\" fill=\"#FFFFFF\" opacity=\"0.32\"/><ellipse cx=\"128\" cy=\"246\" rx=\"86\" ry=\"12\" fill=\"#44403C\" opacity=\"0.07\"/></g>",
+   "weight": 2
+  },
+  {
+   "id": "bg-arch",
+   "svg": "<g><rect width=\"256\" height=\"256\" fill=\"{{bg}}\"/><path d=\"M0 256C30 158 226 158 256 256Z\" fill=\"#FFFFFF\" opacity=\"0.32\"/></g>",
+   "weight": 2
+  },
+  {
+   "id": "bg-horizon",
+   "svg": "<g><rect width=\"256\" height=\"256\" fill=\"{{bg}}\"/><rect x=\"0\" y=\"200\" width=\"256\" height=\"56\" rx=\"0\" fill=\"#44403C\" opacity=\"0.04\"/><ellipse cx=\"128\" cy=\"246\" rx=\"86\" ry=\"12\" fill=\"#44403C\" opacity=\"0.07\"/></g>",
+   "weight": 1
+  },
+  {
+   "id": "bg-blobs",
+   "svg": "<g><rect width=\"256\" height=\"256\" fill=\"{{bg}}\"/><circle cx=\"30\" cy=\"40\" r=\"14\" fill=\"#FFFFFF\" opacity=\"0.45\"/><circle cx=\"226\" cy=\"56\" r=\"9\" fill=\"#FFFFFF\" opacity=\"0.45\"/><circle cx=\"34\" cy=\"214\" r=\"8\" fill=\"#FFFFFF\" opacity=\"0.45\"/><circle cx=\"222\" cy=\"206\" r=\"12\" fill=\"#FFFFFF\" opacity=\"0.45\"/></g>",
+   "weight": 1
+  }
+ ],
+ "species": {
+  "cat": {
+   "label": "Kedi",
+   "layers": [
+    "background",
+    "head",
+    "ears",
+    "pattern",
+    "eyes",
+    "nose",
+    "mouth",
+    "whiskers",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "cat-head-round",
+     "svg": "<g><ellipse cx=\"128\" cy=\"150\" rx=\"92\" ry=\"80\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"145\" rx=\"87\" ry=\"75\" fill=\"{{fur}}\"/><ellipse cx=\"72.8\" cy=\"140.4\" rx=\"22.1\" ry=\"11\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 72.8 140.4)\"/><ellipse cx=\"111\" cy=\"182\" rx=\"22\" ry=\"17\" fill=\"{{furLight}}\"/><ellipse cx=\"145\" cy=\"182\" rx=\"22\" ry=\"17\" fill=\"{{furLight}}\"/></g>",
+     "weight": 3,
+     "half": "M124 70A87 75 0 0 0 124 220Z"
+    },
+    {
+     "id": "cat-head-wide",
+     "svg": "<g><ellipse cx=\"128\" cy=\"156\" rx=\"104\" ry=\"74\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"151\" rx=\"99\" ry=\"69\" fill=\"{{fur}}\"/><ellipse cx=\"65.6\" cy=\"147.1\" rx=\"25\" ry=\"12.5\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 65.6 147.1)\"/><ellipse cx=\"108\" cy=\"186\" rx=\"26\" ry=\"18\" fill=\"{{furLight}}\"/><ellipse cx=\"148\" cy=\"186\" rx=\"26\" ry=\"18\" fill=\"{{furLight}}\"/></g>",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 154,
+      "scale": 1
+     },
+     "half": "M124 82A99 69 0 0 0 124 220Z"
+    },
+    {
+     "id": "cat-head-oval",
+     "svg": "<g><ellipse cx=\"128\" cy=\"148\" rx=\"80\" ry=\"84\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"143\" rx=\"75\" ry=\"79\" fill=\"{{fur}}\"/><ellipse cx=\"80\" cy=\"137.9\" rx=\"19.2\" ry=\"9.6\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 80 137.9)\"/><ellipse cx=\"114\" cy=\"182\" rx=\"19\" ry=\"15\" fill=\"{{furLight}}\"/><ellipse cx=\"142\" cy=\"182\" rx=\"19\" ry=\"15\" fill=\"{{furLight}}\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 148,
+      "scale": 0.94
+     },
+     "half": "M124 64A75 79 0 0 0 124 222Z"
+    },
+    {
+     "id": "cat-head-heart",
+     "svg": "<g><path d=\"M128 230C80 230 40 196 38 150C36 100 76 70 128 70C180 70 220 100 218 150C216 196 176 230 128 230Z\" fill=\"{{furDark}}\" transform=\"translate(5 6)\"/><path d=\"M128 230C80 230 40 196 38 150C36 100 76 70 128 70C180 70 220 100 218 150C216 196 176 230 128 230Z\" fill=\"{{fur}}\"/><ellipse cx=\"70\" cy=\"136\" rx=\"20\" ry=\"10\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 70 136)\"/><ellipse cx=\"112\" cy=\"180\" rx=\"20\" ry=\"16\" fill=\"{{furLight}}\"/><ellipse cx=\"144\" cy=\"180\" rx=\"20\" ry=\"16\" fill=\"{{furLight}}\"/></g>",
+     "weight": 2,
+     "half": "M128 70C76 70 36 100 38 150C40 196 80 230 128 230Z"
+    },
+    {
+     "id": "cat-head-chubby",
+     "svg": "<g><ellipse cx=\"128\" cy=\"154\" rx=\"100\" ry=\"80\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"149\" rx=\"95\" ry=\"75\" fill=\"{{fur}}\"/><ellipse cx=\"68\" cy=\"144.4\" rx=\"24\" ry=\"12\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 68 144.4)\"/><ellipse cx=\"104\" cy=\"184\" rx=\"30\" ry=\"22\" fill=\"{{furLight}}\"/><ellipse cx=\"152\" cy=\"184\" rx=\"30\" ry=\"22\" fill=\"{{furLight}}\"/><ellipse cx=\"128\" cy=\"228\" rx=\"54\" ry=\"16\" fill=\"{{furLight}}\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 154,
+      "scale": 1
+     },
+     "half": "M124 74A95 75 0 0 0 124 224Z"
+    },
+    {
+     "id": "cat-head-fluffy",
+     "svg": "<g><circle cx=\"215.1\" cy=\"180.6\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"201.2\" cy=\"202\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"177.8\" cy=\"218.2\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"148\" cy=\"226.9\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"116\" cy=\"226.9\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"86.2\" cy=\"218.2\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"62.8\" cy=\"202\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"48.9\" cy=\"180.6\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"211.1\" cy=\"176.6\" r=\"22\" fill=\"{{fur}}\"/><circle cx=\"197.2\" cy=\"198\" r=\"22\" fill=\"{{fur}}\"/><circle cx=\"173.8\" cy=\"214.2\" r=\"22\" fill=\"{{fur}}\"/><circle cx=\"144\" cy=\"222.9\" r=\"22\" fill=\"{{fur}}\"/><circle cx=\"112\" cy=\"222.9\" r=\"22\" fill=\"{{fur}}\"/><circle cx=\"82.2\" cy=\"214.2\" r=\"22\" fill=\"{{fur}}\"/><circle cx=\"58.8\" cy=\"198\" r=\"22\" fill=\"{{fur}}\"/><circle cx=\"44.9\" cy=\"176.6\" r=\"22\" fill=\"{{fur}}\"/><ellipse cx=\"128\" cy=\"150\" rx=\"90\" ry=\"78\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"145\" rx=\"85\" ry=\"73\" fill=\"{{fur}}\"/><ellipse cx=\"74\" cy=\"140.6\" rx=\"21.6\" ry=\"10.8\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 74 140.6)\"/><ellipse cx=\"111\" cy=\"182\" rx=\"22\" ry=\"17\" fill=\"{{furLight}}\"/><ellipse cx=\"145\" cy=\"182\" rx=\"22\" ry=\"17\" fill=\"{{furLight}}\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 152,
+      "scale": 0.95
+     },
+     "half": "M124 72A85 73 0 0 0 124 218Z"
+    }
+   ],
+   "ears": [
+    {
+     "id": "cat-ears-upright",
+     "weight": 4,
+     "svg": "<g><path d=\"M46 128C40 84 48 46 60 30C66 22 76 22 84 30C100 46 114 68 120 92Z\" fill=\"{{fur}}\"/><path d=\"M210 128C216 84 208 46 196 30C190 22 180 22 172 30C156 46 142 68 136 92Z\" fill=\"{{fur}}\"/><path d=\"M62 104C58 76 64 52 70 44C74 40 78 40 82 46C92 58 100 74 104 90Z\" fill=\"{{furDark}}\"/><path d=\"M194 104C198 76 192 52 186 44C182 40 178 40 174 46C164 58 156 74 152 90Z\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "cat-ears-fold",
+     "weight": 1,
+     "svg": "<g><path d=\"M68 108C68 84 82 68 102 68C114 68 118 80 110 90C98 96 84 102 76 114Z\" fill=\"{{furDark}}\" transform=\"translate(3 5)\"/><path d=\"M188 108C188 84 174 68 154 68C142 68 138 80 146 90C158 96 172 102 180 114Z\" fill=\"{{furDark}}\" transform=\"translate(3 5)\"/><path d=\"M68 108C68 84 82 68 102 68C114 68 118 80 110 90C98 96 84 102 76 114Z\" fill=\"{{fur}}\"/><path d=\"M188 108C188 84 174 68 154 68C142 68 138 80 146 90C158 96 172 102 180 114Z\" fill=\"{{fur}}\"/></g>"
+    },
+    {
+     "id": "cat-ears-big",
+     "weight": 1,
+     "svg": "<g><path d=\"M38 136C22 90 24 40 40 18C48 10 60 12 70 22C94 46 112 70 122 94Z\" fill=\"{{fur}}\"/><path d=\"M218 136C234 90 232 40 216 18C208 10 196 12 186 22C162 46 144 70 134 94Z\" fill=\"{{fur}}\"/><path d=\"M56 116C46 84 48 50 56 36C60 30 66 32 72 38C88 56 100 74 106 92Z\" fill=\"{{furDark}}\"/><path d=\"M200 116C210 84 208 50 200 36C196 30 190 32 184 38C168 56 156 74 150 92Z\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "cat-ears-tufted",
+     "weight": 1,
+     "svg": "<g><path d=\"M46 128C40 84 48 46 60 30C66 22 76 22 84 30C100 46 114 68 120 92Z\" fill=\"{{fur}}\"/><path d=\"M210 128C216 84 208 46 196 30C190 22 180 22 172 30C156 46 142 68 136 92Z\" fill=\"{{fur}}\"/><path d=\"M62 104C58 76 64 52 70 44C74 40 78 40 82 46C92 58 100 74 104 90Z\" fill=\"{{furDark}}\"/><path d=\"M194 104C198 76 192 52 186 44C182 40 178 40 174 46C164 58 156 74 152 90Z\" fill=\"{{furDark}}\"/><path d=\"M66 96C68 82 74 70 80 64C82 74 84 86 86 98Z\" fill=\"{{furLight}}\"/><path d=\"M190 96C188 82 182 70 176 64C174 74 172 86 170 98Z\" fill=\"{{furLight}}\"/><path d=\"M62 28L56 10M194 28L200 10\" fill=\"none\" stroke=\"{{furDark}}\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "cat-pattern-plain",
+     "svg": "",
+     "weight": 3
+    },
+    {
+     "id": "cat-pattern-tabby",
+     "weight": 3,
+     "svg": "<g><path d=\"M128 80L128 100M106 86L110 104M150 86L146 104M44 150L62 154M46 168L62 168M212 150L194 154M210 168L194 168\" fill=\"none\" stroke=\"{{furDark}}\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "cat-pattern-blaze",
+     "weight": 2,
+     "svg": "<g><path d=\"M128 72C134 100 140 128 150 156C140 166 116 166 106 156C116 128 122 100 128 72Z\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "cat-pattern-eyepatch",
+     "svg": "<g><ellipse cx=\"158\" cy=\"140\" rx=\"28\" ry=\"25\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "cat-pattern-spots",
+     "svg": "<g><circle cx=\"86\" cy=\"98\" r=\"11\" fill=\"{{furDark}}\"/><circle cx=\"172\" cy=\"96\" r=\"8\" fill=\"{{furDark}}\"/><circle cx=\"190\" cy=\"172\" r=\"12\" fill=\"{{furDark}}\"/><circle cx=\"62\" cy=\"186\" r=\"9\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "cat-pattern-half",
+     "weight": 2,
+     "svg": "<g><path d=\"{{half}}\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "cat-pattern-point",
+     "svg": "<g><ellipse cx=\"128\" cy=\"176\" rx=\"50\" ry=\"40\" fill=\"{{furDark}}\" opacity=\"0.75\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-cat-pink",
+     "svg": "<g><path d=\"M117 158C117 152 139 152 139 158C139 165 132 170 128 170C124 170 117 165 117 158Z\" fill=\"#C98579\"/></g>"
+    },
+    {
+     "id": "nose-cat-rose",
+     "svg": "<g><path d=\"M117 158C117 152 139 152 139 158C139 165 132 170 128 170C124 170 117 165 117 158Z\" fill=\"#B9727A\"/></g>"
+    },
+    {
+     "id": "nose-cat-ink",
+     "svg": "<g><path d=\"M117 158C117 152 139 152 139 158C139 165 132 170 128 170C124 170 117 165 117 158Z\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "nose-cat-small",
+     "svg": "<g><path d=\"M121 158C121 154 135 154 135 158C135 163 131 166 128 166C125 166 121 163 121 158Z\" fill=\"#C98579\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "mouth-smile",
+     "svg": "<g><path d=\"M114 180Q128 194 142 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-w",
+     "svg": "<g><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-neutral",
+     "svg": "<g><path d=\"M118 186L138 186\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-open",
+     "svg": "<g><path d=\"M112 178Q128 208 144 178Q128 184 112 178Z\" fill=\"#44403C\"/><ellipse cx=\"128\" cy=\"195\" rx=\"9\" ry=\"5.5\" fill=\"#D98A7E\"/></g>"
+    },
+    {
+     "id": "mouth-tongue",
+     "svg": "<g><path d=\"M119 182C119 200 123 206 128 206C133 206 137 200 137 182Z\" fill=\"#D98A7E\"/><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-surprised",
+     "svg": "<g><ellipse cx=\"128\" cy=\"188\" rx=\"8\" ry=\"10\" fill=\"#44403C\"/></g>"
+    }
+   ],
+   "whiskers": [
+    {
+     "id": "whiskers-none",
+     "svg": "",
+     "weight": 2
+    },
+    {
+     "id": "whiskers-short",
+     "svg": "<g><path d=\"M84 180L56 176M84 188L56 192M172 180L200 176M172 188L200 192\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.45\"/></g>",
+     "weight": 3
+    },
+    {
+     "id": "whiskers-long",
+     "svg": "<g><path d=\"M80 178L36 170M80 186L34 190M176 178L220 170M176 186L222 190\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.45\"/></g>",
+     "weight": 3
+    },
+    {
+     "id": "whiskers-droopy",
+     "svg": "<g><path d=\"M80 180Q56 182 36 194M80 188Q60 194 44 208M176 180Q200 182 220 194M176 188Q196 194 212 208\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.45\"/></g>",
+     "weight": 1
+    }
+   ]
+  },
+  "dog": {
+   "label": "Köpek",
+   "layers": [
+    "background",
+    "head",
+    "ears",
+    "pattern",
+    "eyes",
+    "nose",
+    "mouth",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "dog-head-round",
+     "svg": "<g><ellipse cx=\"128\" cy=\"146\" rx=\"88\" ry=\"80\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"141\" rx=\"83\" ry=\"75\" fill=\"{{fur}}\"/><ellipse cx=\"75.2\" cy=\"136.4\" rx=\"21.1\" ry=\"10.6\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 75.2 136.4)\"/><ellipse cx=\"131\" cy=\"185\" rx=\"48\" ry=\"36\" fill=\"{{furDark}}\" opacity=\"0.35\"/><ellipse cx=\"128\" cy=\"181\" rx=\"46\" ry=\"34\" fill=\"{{furLight}}\"/></g>",
+     "muzzle": "M82 181A46 34 0 1 0 174 181A46 34 0 1 0 82 181Z",
+     "weight": 3,
+     "half": "M124 66A83 75 0 0 0 124 216Z"
+    },
+    {
+     "id": "dog-head-flat",
+     "svg": "<g><ellipse cx=\"128\" cy=\"150\" rx=\"96\" ry=\"76\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"145\" rx=\"91\" ry=\"71\" fill=\"{{fur}}\"/><ellipse cx=\"70.4\" cy=\"140.9\" rx=\"23\" ry=\"11.5\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 70.4 140.9)\"/><ellipse cx=\"131\" cy=\"183\" rx=\"54\" ry=\"30\" fill=\"{{furDark}}\" opacity=\"0.35\"/><ellipse cx=\"128\" cy=\"179\" rx=\"52\" ry=\"28\" fill=\"{{furLight}}\"/></g>",
+     "muzzle": "M76 179A52 28 0 1 0 180 179A52 28 0 1 0 76 179Z",
+     "weight": 2,
+     "half": "M124 74A91 71 0 0 0 124 216Z"
+    },
+    {
+     "id": "dog-head-long",
+     "svg": "<g><ellipse cx=\"128\" cy=\"136\" rx=\"80\" ry=\"82\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"131\" rx=\"75\" ry=\"77\" fill=\"{{fur}}\"/><ellipse cx=\"80\" cy=\"126.2\" rx=\"19.2\" ry=\"9.6\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 80 126.2)\"/><ellipse cx=\"131\" cy=\"190\" rx=\"40\" ry=\"44\" fill=\"{{furDark}}\" opacity=\"0.35\"/><ellipse cx=\"128\" cy=\"186\" rx=\"38\" ry=\"42\" fill=\"{{furLight}}\"/></g>",
+     "muzzle": "M90 186A38 42 0 1 0 166 186A38 42 0 1 0 90 186Z",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 144,
+      "scale": 1
+     },
+     "muzzleAnchor": {
+      "x": 128,
+      "y": 156,
+      "scale": 1
+     },
+     "half": "M124 54A75 77 0 0 0 124 208Z"
+    },
+    {
+     "id": "dog-head-wide",
+     "svg": "<g><ellipse cx=\"128\" cy=\"150\" rx=\"104\" ry=\"78\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"145\" rx=\"99\" ry=\"73\" fill=\"{{fur}}\"/><ellipse cx=\"65.6\" cy=\"140.6\" rx=\"25\" ry=\"12.5\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 65.6 140.6)\"/><ellipse cx=\"131\" cy=\"188\" rx=\"58\" ry=\"38\" fill=\"{{furDark}}\" opacity=\"0.35\"/><ellipse cx=\"128\" cy=\"184\" rx=\"56\" ry=\"36\" fill=\"{{furLight}}\"/></g>",
+     "muzzle": "M72 184A56 36 0 1 0 184 184A56 36 0 1 0 72 184Z",
+     "weight": 2,
+     "half": "M124 72A99 73 0 0 0 124 218Z"
+    },
+    {
+     "id": "dog-head-narrow",
+     "svg": "<g><path d=\"M128 236C100 236 84 210 72 180C56 140 52 96 80 76C100 62 156 62 176 76C204 96 200 140 184 180C172 210 156 236 128 236Z\" fill=\"{{furDark}}\" transform=\"translate(5 6)\"/><path d=\"M128 236C100 236 84 210 72 180C56 140 52 96 80 76C100 62 156 62 176 76C204 96 200 140 184 180C172 210 156 236 128 236Z\" fill=\"{{fur}}\"/><ellipse cx=\"80\" cy=\"118\" rx=\"18\" ry=\"9\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 80 118)\"/><ellipse cx=\"131\" cy=\"194\" rx=\"32\" ry=\"42\" fill=\"{{furDark}}\" opacity=\"0.35\"/><ellipse cx=\"128\" cy=\"190\" rx=\"30\" ry=\"40\" fill=\"{{furLight}}\"/></g>",
+     "half": "M128 62C100 62 84 66 80 76C52 96 56 140 72 180C84 210 100 236 128 236Z",
+     "muzzle": "M98 190A30 40 0 1 0 158 190A30 40 0 1 0 98 190Z",
+     "faceAnchor": {
+      "x": 128,
+      "y": 146,
+      "scale": 0.9
+     },
+     "muzzleAnchor": {
+      "x": 128,
+      "y": 158,
+      "scale": 0.9
+     }
+    },
+    {
+     "id": "dog-head-puppy",
+     "svg": "<g><ellipse cx=\"128\" cy=\"146\" rx=\"92\" ry=\"84\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"141\" rx=\"87\" ry=\"79\" fill=\"{{fur}}\"/><ellipse cx=\"72.8\" cy=\"135.9\" rx=\"22.1\" ry=\"11\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 72.8 135.9)\"/><ellipse cx=\"131\" cy=\"196\" rx=\"40\" ry=\"28\" fill=\"{{furDark}}\" opacity=\"0.35\"/><ellipse cx=\"128\" cy=\"192\" rx=\"38\" ry=\"26\" fill=\"{{furLight}}\"/></g>",
+     "muzzle": "M90 192A38 26 0 1 0 166 192A38 26 0 1 0 90 192Z",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 154,
+      "scale": 1
+     },
+     "muzzleAnchor": {
+      "x": 128,
+      "y": 166,
+      "scale": 0.9
+     },
+     "half": "M124 62A87 79 0 0 0 124 220Z"
+    },
+    {
+     "id": "dog-head-square",
+     "svg": "<g><path d=\"M60 80C80 66 176 66 196 80C214 94 218 130 216 170C214 206 196 228 168 230L88 230C60 228 42 206 40 170C38 130 42 94 60 80Z\" fill=\"{{furDark}}\" transform=\"translate(5 6)\"/><path d=\"M60 80C80 66 176 66 196 80C214 94 218 130 216 170C214 206 196 228 168 230L88 230C60 228 42 206 40 170C38 130 42 94 60 80Z\" fill=\"{{fur}}\"/><ellipse cx=\"66\" cy=\"124\" rx=\"20\" ry=\"10\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 66 124)\"/><ellipse cx=\"131\" cy=\"188\" rx=\"54\" ry=\"36\" fill=\"{{furDark}}\" opacity=\"0.35\"/><ellipse cx=\"128\" cy=\"184\" rx=\"52\" ry=\"34\" fill=\"{{furLight}}\"/></g>",
+     "half": "M128 68C96 68 70 70 60 80C42 94 38 130 40 170C42 206 60 228 88 230L128 230Z",
+     "muzzle": "M76 184A52 34 0 1 0 180 184A52 34 0 1 0 76 184Z"
+    },
+    {
+     "id": "dog-head-fluffy",
+     "svg": "<g><circle cx=\"228\" cy=\"154\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"215.1\" cy=\"197\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"180\" cy=\"228.5\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"132\" cy=\"240\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"84\" cy=\"228.5\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"48.9\" cy=\"197\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"36\" cy=\"154\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"48.9\" cy=\"111\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"84\" cy=\"79.5\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"132\" cy=\"68\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"180\" cy=\"79.5\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"215.1\" cy=\"111\" r=\"24\" fill=\"{{furDark}}\"/><circle cx=\"224\" cy=\"150\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"211.1\" cy=\"193\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"176\" cy=\"224.5\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"128\" cy=\"236\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"80\" cy=\"224.5\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"44.9\" cy=\"193\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"32\" cy=\"150\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"44.9\" cy=\"107\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"80\" cy=\"75.5\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"128\" cy=\"64\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"176\" cy=\"75.5\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"211.1\" cy=\"107\" r=\"24\" fill=\"{{fur}}\"/><ellipse cx=\"128\" cy=\"148\" rx=\"86\" ry=\"78\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"143\" rx=\"81\" ry=\"73\" fill=\"{{fur}}\"/><ellipse cx=\"76.4\" cy=\"138.6\" rx=\"20.6\" ry=\"10.3\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 76.4 138.6)\"/><ellipse cx=\"131\" cy=\"188\" rx=\"38\" ry=\"28\" fill=\"{{furDark}}\" opacity=\"0.35\"/><ellipse cx=\"128\" cy=\"184\" rx=\"36\" ry=\"26\" fill=\"{{furLight}}\"/></g>",
+     "muzzle": "M92 184A36 26 0 1 0 164 184A36 26 0 1 0 92 184Z",
+     "faceAnchor": {
+      "x": 128,
+      "y": 150,
+      "scale": 0.95
+     },
+     "muzzleAnchor": {
+      "x": 128,
+      "y": 158,
+      "scale": 0.85
+     },
+     "half": "M124 70A81 73 0 0 0 124 216Z"
+    }
+   ],
+   "ears": [
+    {
+     "id": "dog-ears-upright",
+     "weight": 3,
+     "svg": "<g><path d=\"M44 132C36 92 40 50 56 30C62 22 72 22 80 30C98 48 112 72 118 94Z\" fill=\"{{fur}}\"/><path d=\"M212 132C220 92 216 50 200 30C194 22 184 22 176 30C158 48 144 72 138 94Z\" fill=\"{{fur}}\"/><path d=\"M60 110C56 82 60 56 68 46C72 42 76 42 80 48C90 62 98 78 102 94Z\" fill=\"{{furLight}}\"/><path d=\"M196 110C200 82 196 56 188 46C184 42 180 42 176 48C166 62 158 78 154 94Z\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "dog-ears-semi",
+     "weight": 2,
+     "svg": "<g><path d=\"M48 126C40 92 50 62 74 52C92 46 106 54 108 70C100 76 90 80 84 90C78 102 70 114 62 128Z\" fill=\"{{fur}}\"/><path d=\"M208 126C216 92 206 62 182 52C164 46 150 54 148 70C156 76 166 80 172 90C178 102 186 114 194 128Z\" fill=\"{{fur}}\"/><path d=\"M74 52C92 46 106 54 108 70C100 76 90 78 82 70C78 64 76 58 74 52Z\" fill=\"{{furDark}}\"/><path d=\"M182 52C164 46 150 54 148 70C156 76 166 78 174 70C178 64 180 58 182 52Z\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "dog-ears-floppy",
+     "weight": 4,
+     "svg": "<g><path d=\"M66 84C40 84 24 110 22 150C20 186 30 210 48 212C64 214 72 196 74 170C76 140 82 108 84 90C80 86 72 84 66 84Z\" fill=\"{{furDark}}\"/><path d=\"M190 84C216 84 232 110 234 150C236 186 226 210 208 212C192 214 184 196 182 170C180 140 174 108 172 90C176 86 184 84 190 84Z\" fill=\"{{furDark}}\"/><ellipse cx=\"40\" cy=\"146\" rx=\"7\" ry=\"24\" fill=\"{{fur}}\" opacity=\"0.45\"/></g>"
+    },
+    {
+     "id": "dog-ears-long",
+     "weight": 2,
+     "svg": "<g><path d=\"M70 82C40 80 22 108 20 150C18 186 22 214 34 228C46 240 66 238 76 222C84 208 80 190 82 170C84 140 88 110 90 92C86 86 78 82 70 82Z\" fill=\"{{furDark}}\"/><path d=\"M186 82C216 80 234 108 236 150C238 186 234 214 222 228C210 240 190 238 180 222C172 208 176 190 174 170C172 140 168 110 166 92C170 86 178 82 186 82Z\" fill=\"{{furDark}}\"/><ellipse cx=\"38\" cy=\"160\" rx=\"7\" ry=\"30\" fill=\"{{fur}}\" opacity=\"0.4\"/></g>"
+    },
+    {
+     "id": "dog-ears-button",
+     "weight": 2,
+     "svg": "<g><path d=\"M60 98C58 78 72 62 96 64C104 66 106 76 100 86C92 96 80 104 70 108C64 108 60 104 60 98Z\" fill=\"{{furDark}}\" transform=\"translate(2 4)\"/><path d=\"M196 98C198 78 184 62 160 64C152 66 150 76 156 86C164 96 176 104 186 108C192 108 196 104 196 98Z\" fill=\"{{furDark}}\" transform=\"translate(2 4)\"/><path d=\"M60 98C58 78 72 62 96 64C104 66 106 76 100 86C92 96 80 104 70 108C64 108 60 104 60 98Z\" fill=\"{{fur}}\"/><path d=\"M196 98C198 78 184 62 160 64C152 66 150 76 156 86C164 96 176 104 186 108C192 108 196 104 196 98Z\" fill=\"{{fur}}\"/></g>"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "dog-pattern-plain",
+     "svg": "",
+     "weight": 4
+    },
+    {
+     "id": "dog-pattern-blaze",
+     "weight": 2,
+     "svg": "<g><path d=\"M128 70C134 98 138 124 146 150C138 160 118 160 110 150C118 124 122 98 128 70Z\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "dog-pattern-eyepatch",
+     "weight": 2,
+     "svg": "<g><ellipse cx=\"158\" cy=\"138\" rx=\"28\" ry=\"25\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "dog-pattern-spots",
+     "svg": "<g><circle cx=\"84\" cy=\"100\" r=\"11\" fill=\"{{furDark}}\"/><circle cx=\"170\" cy=\"92\" r=\"8\" fill=\"{{furDark}}\"/><circle cx=\"192\" cy=\"168\" r=\"12\" fill=\"{{furDark}}\"/><circle cx=\"60\" cy=\"170\" r=\"9\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "dog-pattern-half",
+     "svg": "<g><path d=\"{{half}}\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "dog-pattern-mask",
+     "svg": "<g><path d=\"{{muzzle}}\" fill=\"{{furDark}}\" opacity=\"0.7\"/></g>"
+    },
+    {
+     "id": "dog-pattern-points",
+     "svg": "<g><ellipse cx=\"100\" cy=\"116\" rx=\"11\" ry=\"7\" fill=\"{{furLight}}\"/><ellipse cx=\"156\" cy=\"116\" rx=\"11\" ry=\"7\" fill=\"{{furLight}}\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-dog",
+     "svg": "<g><path d=\"M110 158C110 147 146 147 146 158C146 168 136 172 128 172C120 172 110 168 110 158Z\" fill=\"#44403C\"/><ellipse cx=\"121\" cy=\"154\" rx=\"6\" ry=\"3.5\" fill=\"#FFFFFF\" opacity=\"0.35\"/></g>",
+     "weight": 4
+    },
+    {
+     "id": "nose-dog-wide",
+     "svg": "<g><path d=\"M106 158C106 146 150 146 150 158C150 169 138 174 128 174C118 174 106 169 106 158Z\" fill=\"#44403C\"/><ellipse cx=\"119\" cy=\"154\" rx=\"7\" ry=\"3.5\" fill=\"#FFFFFF\" opacity=\"0.35\"/></g>"
+    },
+    {
+     "id": "nose-dog-small",
+     "svg": "<g><path d=\"M116 158C116 151 140 151 140 158C140 165 133 168 128 168C123 168 116 165 116 158Z\" fill=\"#44403C\"/><ellipse cx=\"123\" cy=\"155\" rx=\"4.5\" ry=\"2.5\" fill=\"#FFFFFF\" opacity=\"0.35\"/></g>"
+    },
+    {
+     "id": "nose-dog-liver",
+     "svg": "<g><path d=\"M110 158C110 147 146 147 146 158C146 168 136 172 128 172C120 172 110 168 110 158Z\" fill=\"#7A5245\"/><ellipse cx=\"121\" cy=\"154\" rx=\"6\" ry=\"3.5\" fill=\"#FFFFFF\" opacity=\"0.3\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "mouth-smile",
+     "svg": "<g><path d=\"M114 180Q128 194 142 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-w",
+     "svg": "<g><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-neutral",
+     "svg": "<g><path d=\"M118 186L138 186\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-open",
+     "svg": "<g><path d=\"M112 178Q128 208 144 178Q128 184 112 178Z\" fill=\"#44403C\"/><ellipse cx=\"128\" cy=\"195\" rx=\"9\" ry=\"5.5\" fill=\"#D98A7E\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "mouth-tongue",
+     "svg": "<g><path d=\"M119 182C119 200 123 206 128 206C133 206 137 200 137 182Z\" fill=\"#D98A7E\"/><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "mouth-surprised",
+     "svg": "<g><ellipse cx=\"128\" cy=\"188\" rx=\"8\" ry=\"10\" fill=\"#44403C\"/></g>"
+    }
+   ]
+  },
+  "bird": {
+   "label": "Kuş",
+   "layers": [
+    "background",
+    "head",
+    "pattern",
+    "eyes",
+    "nose",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "bird-head-budgie",
+     "svg": "<g><ellipse cx=\"128\" cy=\"262\" rx=\"104\" ry=\"70\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"257\" rx=\"99\" ry=\"65\" fill=\"{{fur}}\"/><ellipse cx=\"65.6\" cy=\"253.6\" rx=\"25\" ry=\"12.5\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 65.6 253.6)\"/><ellipse cx=\"128\" cy=\"140\" rx=\"84\" ry=\"82\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"135\" rx=\"79\" ry=\"77\" fill=\"{{fur}}\"/><ellipse cx=\"77.6\" cy=\"130.2\" rx=\"20.2\" ry=\"10.1\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 77.6 130.2)\"/><ellipse cx=\"128\" cy=\"154\" rx=\"60\" ry=\"60\" fill=\"{{furLight}}\"/></g>",
+     "weight": 3,
+     "half": "M124 58A79 77 0 0 0 124 212Z"
+    },
+    {
+     "id": "bird-head-parrot",
+     "svg": "<g><ellipse cx=\"128\" cy=\"262\" rx=\"112\" ry=\"70\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"257\" rx=\"107\" ry=\"65\" fill=\"{{fur}}\"/><ellipse cx=\"60.8\" cy=\"253.6\" rx=\"26.9\" ry=\"13.4\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 60.8 253.6)\"/><ellipse cx=\"128\" cy=\"136\" rx=\"92\" ry=\"88\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"131\" rx=\"87\" ry=\"83\" fill=\"{{fur}}\"/><ellipse cx=\"72.8\" cy=\"125.4\" rx=\"22.1\" ry=\"11\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 72.8 125.4)\"/></g>",
+     "weight": 2,
+     "half": "M124 48A87 83 0 0 0 124 214Z"
+    },
+    {
+     "id": "bird-head-canary",
+     "svg": "<g><ellipse cx=\"128\" cy=\"262\" rx=\"96\" ry=\"70\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"257\" rx=\"91\" ry=\"65\" fill=\"{{fur}}\"/><ellipse cx=\"70.4\" cy=\"253.6\" rx=\"23\" ry=\"11.5\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 70.4 253.6)\"/><ellipse cx=\"128\" cy=\"146\" rx=\"80\" ry=\"78\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"141\" rx=\"75\" ry=\"73\" fill=\"{{fur}}\"/><ellipse cx=\"80\" cy=\"136.6\" rx=\"19.2\" ry=\"9.6\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 80 136.6)\"/><ellipse cx=\"128\" cy=\"176\" rx=\"46\" ry=\"34\" fill=\"{{furLight}}\" opacity=\"0.7\"/></g>",
+     "weight": 2,
+     "half": "M124 68A75 73 0 0 0 124 214Z"
+    },
+    {
+     "id": "bird-head-crested",
+     "svg": "<g><ellipse cx=\"128\" cy=\"262\" rx=\"104\" ry=\"70\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"257\" rx=\"99\" ry=\"65\" fill=\"{{fur}}\"/><ellipse cx=\"65.6\" cy=\"253.6\" rx=\"25\" ry=\"12.5\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 65.6 253.6)\"/><path d=\"M126 80C112 50 118 22 136 8C144 28 142 56 134 80Z\" fill=\"{{furDark}}\" transform=\"translate(3 3)\"/><path d=\"M126 80C112 50 118 22 136 8C144 28 142 56 134 80Z\" fill=\"{{fur}}\"/><path d=\"M116 82C96 62 92 38 102 22C114 36 122 58 124 80Z\" fill=\"{{furDark}}\" transform=\"translate(3 3)\"/><path d=\"M116 82C96 62 92 38 102 22C114 36 122 58 124 80Z\" fill=\"{{fur}}\"/><ellipse cx=\"128\" cy=\"148\" rx=\"82\" ry=\"80\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"143\" rx=\"77\" ry=\"75\" fill=\"{{fur}}\"/><ellipse cx=\"78.8\" cy=\"138.4\" rx=\"19.7\" ry=\"9.8\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 78.8 138.4)\"/></g>",
+     "weight": 2,
+     "half": "M124 68A77 75 0 0 0 124 218Z"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "bird-pattern-plain",
+     "svg": "",
+     "weight": 3
+    },
+    {
+     "id": "bird-pattern-cheeks",
+     "weight": 2,
+     "svg": "<g><circle cx=\"78\" cy=\"178\" r=\"11\" fill=\"{{furDark}}\"/><circle cx=\"178\" cy=\"178\" r=\"11\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "bird-pattern-bars",
+     "weight": 2,
+     "svg": "<g><path d=\"M86 86Q96 80 106 86Q116 92 126 86Q136 80 146 86Q156 92 166 86M74 102Q84 96 94 102M162 102Q172 96 182 102\" fill=\"none\" stroke=\"{{furDark}}\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "bird-pattern-throat",
+     "svg": "<g><circle cx=\"108\" cy=\"206\" r=\"5\" fill=\"{{furDark}}\"/><circle cx=\"128\" cy=\"210\" r=\"5\" fill=\"{{furDark}}\"/><circle cx=\"148\" cy=\"206\" r=\"5\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "bird-pattern-blush",
+     "weight": 2,
+     "svg": "<g><circle cx=\"80\" cy=\"172\" r=\"15\" fill=\"#E9A06A\"/><circle cx=\"176\" cy=\"172\" r=\"15\" fill=\"#E9A06A\"/></g>"
+    },
+    {
+     "id": "bird-pattern-mask",
+     "svg": "<g><ellipse cx=\"98\" cy=\"140\" rx=\"27\" ry=\"23\" fill=\"#F3EFE8\"/><ellipse cx=\"158\" cy=\"140\" rx=\"27\" ry=\"23\" fill=\"#F3EFE8\"/></g>"
+    }
+   ],
+   "eyes": [
+    {
+     "id": "eyes-dot",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"158\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"161.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+    },
+    {
+     "id": "eyes-round",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"103.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"163.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "eyes-big",
+     "svg": "<g><circle cx=\"98\" cy=\"138\" r=\"19\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"138\" r=\"19\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"140\" r=\"13\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"140\" r=\"13\" fill=\"#44403C\"/><circle cx=\"104\" cy=\"135\" r=\"5\" fill=\"#FFFFFF\"/><circle cx=\"164\" cy=\"135\" r=\"5\" fill=\"#FFFFFF\"/><circle cx=\"96\" cy=\"145\" r=\"2.5\" fill=\"#FFFFFF\"/><circle cx=\"156\" cy=\"145\" r=\"2.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "eyes-happy",
+     "svg": "<g><path d=\"M86 144Q98 130 110 144M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-sleepy",
+     "svg": "<g><path d=\"M84 138A14 14 0 0 0 112 138Z\" fill=\"#44403C\"/><path d=\"M144 138A14 14 0 0 0 172 138Z\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "eyes-calm",
+     "svg": "<g><path d=\"M86 138Q98 150 110 138M146 138Q158 150 170 138\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "beak-short",
+     "svg": "<g><path d=\"M114 158C114 148 142 148 142 158C142 170 134 182 128 184C122 182 114 170 114 158Z\" fill=\"#E7B27C\"/><ellipse cx=\"128\" cy=\"149\" rx=\"12\" ry=\"5\" fill=\"#BFC8DA\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "beak-hook",
+     "svg": "<g><path d=\"M106 156C106 138 150 138 152 158C154 180 142 200 126 202C132 192 134 182 126 176C114 172 106 166 106 156Z\" fill=\"#6B6460\"/><ellipse cx=\"126\" cy=\"178\" rx=\"11\" ry=\"7\" fill=\"#55504D\"/></g>"
+    },
+    {
+     "id": "beak-thin",
+     "svg": "<g><path d=\"M117 158C119 151 137 151 139 158L128 180Z\" fill=\"#E9A65A\" stroke=\"#E9A65A\" stroke-width=\"6\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "accessory": [
+    {
+     "id": "acc-none",
+     "svg": "",
+     "weight": 14
+    },
+    {
+     "id": "acc-bow",
+     "svg": "<g><path d=\"M128 228L94 210C88 222 88 236 94 248Z\" fill=\"{{accent}}\"/><path d=\"M128 228L162 210C168 222 168 236 162 248Z\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"#44403C\" opacity=\"0.12\"/></g>"
+    },
+    {
+     "id": "acc-bandage",
+     "svg": "<g><rect x=\"146\" y=\"88\" width=\"44\" height=\"16\" rx=\"8\" fill=\"#EBCFA6\" transform=\"rotate(-18 168 96)\"/><rect x=\"161\" y=\"88\" width=\"14\" height=\"16\" rx=\"0\" fill=\"#DDBB8C\" transform=\"rotate(-18 168 96)\"/></g>"
+    }
+   ]
+  },
+  "rabbit": {
+   "label": "Tavşan",
+   "layers": [
+    "background",
+    "head",
+    "ears",
+    "pattern",
+    "eyes",
+    "nose",
+    "mouth",
+    "whiskers",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "rabbit-head-round",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"86\" ry=\"72\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"155\" rx=\"81\" ry=\"67\" fill=\"{{fur}}\"/><ellipse cx=\"76.4\" cy=\"151.4\" rx=\"20.6\" ry=\"10.3\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 76.4 151.4)\"/><ellipse cx=\"112\" cy=\"190\" rx=\"20\" ry=\"15\" fill=\"{{furLight}}\"/><ellipse cx=\"144\" cy=\"190\" rx=\"20\" ry=\"15\" fill=\"{{furLight}}\"/></g>",
+     "weight": 3,
+     "faceAnchor": {
+      "x": 128,
+      "y": 160,
+      "scale": 1
+     },
+     "half": "M124 88A81 67 0 0 0 124 222Z"
+    },
+    {
+     "id": "rabbit-head-wide",
+     "svg": "<g><ellipse cx=\"128\" cy=\"164\" rx=\"94\" ry=\"70\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"159\" rx=\"89\" ry=\"65\" fill=\"{{fur}}\"/><ellipse cx=\"71.6\" cy=\"155.6\" rx=\"22.6\" ry=\"11.3\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 71.6 155.6)\"/><ellipse cx=\"108\" cy=\"194\" rx=\"24\" ry=\"16\" fill=\"{{furLight}}\"/><ellipse cx=\"148\" cy=\"194\" rx=\"24\" ry=\"16\" fill=\"{{furLight}}\"/></g>",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 164,
+      "scale": 1
+     },
+     "half": "M124 94A89 65 0 0 0 124 224Z"
+    },
+    {
+     "id": "rabbit-head-lionhead",
+     "svg": "<g><circle cx=\"52.3\" cy=\"196\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"40.2\" cy=\"158.9\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"47.5\" cy=\"120.7\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"72.9\" cy=\"89.7\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"110.8\" cy=\"72.3\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"153.2\" cy=\"72.3\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"191.1\" cy=\"89.7\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"216.5\" cy=\"120.7\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"223.8\" cy=\"158.9\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"211.7\" cy=\"196\" r=\"24\" fill=\"{{fur}}\"/><circle cx=\"48.3\" cy=\"192\" r=\"24\" fill=\"{{furLight}}\"/><circle cx=\"36.2\" cy=\"154.9\" r=\"24\" fill=\"{{furLight}}\"/><circle cx=\"43.5\" cy=\"116.7\" r=\"24\" fill=\"{{furLight}}\"/><circle cx=\"68.9\" cy=\"85.7\" r=\"24\" fill=\"{{furLight}}\"/><circle cx=\"106.8\" cy=\"68.3\" r=\"24\" fill=\"{{furLight}}\"/><circle cx=\"149.2\" cy=\"68.3\" r=\"24\" fill=\"{{furLight}}\"/><circle cx=\"187.1\" cy=\"85.7\" r=\"24\" fill=\"{{furLight}}\"/><circle cx=\"212.5\" cy=\"116.7\" r=\"24\" fill=\"{{furLight}}\"/><circle cx=\"219.8\" cy=\"154.9\" r=\"24\" fill=\"{{furLight}}\"/><circle cx=\"207.7\" cy=\"192\" r=\"24\" fill=\"{{furLight}}\"/><ellipse cx=\"128\" cy=\"162\" rx=\"84\" ry=\"70\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"157\" rx=\"79\" ry=\"65\" fill=\"{{fur}}\"/><ellipse cx=\"77.6\" cy=\"153.6\" rx=\"20.2\" ry=\"10.1\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 77.6 153.6)\"/><ellipse cx=\"112\" cy=\"192\" rx=\"20\" ry=\"15\" fill=\"{{furLight}}\"/><ellipse cx=\"144\" cy=\"192\" rx=\"20\" ry=\"15\" fill=\"{{furLight}}\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 162,
+      "scale": 0.95
+     },
+     "half": "M124 92A79 65 0 0 0 124 222Z"
+    }
+   ],
+   "ears": [
+    {
+     "id": "rabbit-ears-up",
+     "weight": 3,
+     "svg": "<g><path d=\"M84 118C68 80 62 30 76 12C90 -2 108 22 112 60C114 80 112 100 108 116Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M84 118C68 80 62 30 76 12C90 -2 108 22 112 60C114 80 112 100 108 116Z\" fill=\"{{fur}}\"/><path d=\"M172 118C188 80 194 30 180 12C166 -2 148 22 144 60C142 80 144 100 148 116Z\" fill=\"{{furDark}}\" transform=\"translate(-3 4)\"/><path d=\"M172 118C188 80 194 30 180 12C166 -2 148 22 144 60C142 80 144 100 148 116Z\" fill=\"{{fur}}\"/><path d=\"M88 104C78 78 74 42 82 28C90 20 100 40 102 64C103 80 102 94 100 104Z\" fill=\"{{furLight}}\"/><path d=\"M168 104C178 78 182 42 174 28C166 20 156 40 154 64C153 80 154 94 156 104Z\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "rabbit-ears-lop",
+     "weight": 2,
+     "svg": "<g><path d=\"M92 100C60 92 34 118 32 166C30 204 44 226 62 222C78 218 80 196 82 172C84 146 94 122 104 110Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M92 100C60 92 34 118 32 166C30 204 44 226 62 222C78 218 80 196 82 172C84 146 94 122 104 110Z\" fill=\"{{fur}}\"/><path d=\"M164 100C196 92 222 118 224 166C226 204 212 226 194 222C178 218 176 196 174 172C172 146 162 122 152 110Z\" fill=\"{{furDark}}\" transform=\"translate(-3 4)\"/><path d=\"M164 100C196 92 222 118 224 166C226 204 212 226 194 222C178 218 176 196 174 172C172 146 162 122 152 110Z\" fill=\"{{fur}}\"/></g>"
+    },
+    {
+     "id": "rabbit-ears-half",
+     "svg": "<g><path d=\"M84 118C68 80 62 30 76 12C90 -2 108 22 112 60C114 80 112 100 108 116Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M84 118C68 80 62 30 76 12C90 -2 108 22 112 60C114 80 112 100 108 116Z\" fill=\"{{fur}}\"/><path d=\"M88 104C78 78 74 42 82 28C90 20 100 40 102 64C103 80 102 94 100 104Z\" fill=\"{{furLight}}\"/><path d=\"M164 100C196 92 222 118 224 166C226 204 212 226 194 222C178 218 176 196 174 172C172 146 162 122 152 110Z\" fill=\"{{furDark}}\" transform=\"translate(-3 4)\"/><path d=\"M164 100C196 92 222 118 224 166C226 204 212 226 194 222C178 218 176 196 174 172C172 146 162 122 152 110Z\" fill=\"{{fur}}\"/></g>"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "rabbit-pattern-plain",
+     "svg": "",
+     "weight": 3
+    },
+    {
+     "id": "rabbit-pattern-blaze",
+     "weight": 2,
+     "svg": "<g><path d=\"M128 96C134 120 138 140 144 166C136 174 120 174 112 166C118 140 122 120 128 96Z\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "rabbit-pattern-half",
+     "svg": "<g><path d=\"{{half}}\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "rabbit-pattern-spots",
+     "svg": "<g><circle cx=\"90\" cy=\"116\" r=\"10\" fill=\"{{furDark}}\"/><circle cx=\"170\" cy=\"110\" r=\"8\" fill=\"{{furDark}}\"/><circle cx=\"188\" cy=\"186\" r=\"10\" fill=\"{{furDark}}\"/><circle cx=\"66\" cy=\"190\" r=\"8\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "rabbit-pattern-eyepatch",
+     "svg": "<g><ellipse cx=\"158\" cy=\"150\" rx=\"26\" ry=\"23\" fill=\"{{furDark}}\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-bunny",
+     "svg": "<g><path d=\"M119 156C119 151 137 151 137 156C137 161 132 165 128 165C124 165 119 161 119 156Z\" fill=\"#C98579\"/><path d=\"M128 165L128 172\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.6\"/></g>",
+     "weight": 3
+    },
+    {
+     "id": "nose-button",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"10\" ry=\"7\" fill=\"#C98579\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "mouth-w",
+     "svg": "<g><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 3
+    },
+    {
+     "id": "mouth-smile",
+     "svg": "<g><path d=\"M114 180Q128 194 142 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-neutral",
+     "svg": "<g><path d=\"M118 186L138 186\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-surprised",
+     "svg": "<g><ellipse cx=\"128\" cy=\"188\" rx=\"8\" ry=\"10\" fill=\"#44403C\"/></g>"
+    }
+   ],
+   "whiskers": [
+    {
+     "id": "whiskers-none",
+     "svg": ""
+    },
+    {
+     "id": "whiskers-short",
+     "svg": "<g><path d=\"M84 180L56 176M84 188L56 192M172 180L200 176M172 188L200 192\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.45\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "whiskers-long",
+     "svg": "<g><path d=\"M80 178L36 170M80 186L34 190M176 178L220 170M176 186L222 190\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.45\"/></g>"
+    }
+   ]
+  },
+  "rodent": {
+   "label": "Küçük kemirgen",
+   "layers": [
+    "background",
+    "head",
+    "pattern",
+    "eyes",
+    "nose",
+    "mouth",
+    "whiskers",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "rodent-head-hamster",
+     "svg": "<g><circle cx=\"69\" cy=\"101\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"66\" cy=\"98\" r=\"22\" fill=\"{{fur}}\"/><circle cx=\"66\" cy=\"98\" r=\"12\" fill=\"#E7B6AE\"/><circle cx=\"193\" cy=\"101\" r=\"22\" fill=\"{{furDark}}\"/><circle cx=\"190\" cy=\"98\" r=\"22\" fill=\"{{fur}}\"/><circle cx=\"190\" cy=\"98\" r=\"12\" fill=\"#E7B6AE\"/><ellipse cx=\"128\" cy=\"160\" rx=\"100\" ry=\"76\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"155\" rx=\"95\" ry=\"71\" fill=\"{{fur}}\"/><ellipse cx=\"68\" cy=\"150.9\" rx=\"24\" ry=\"12\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 68 150.9)\"/><ellipse cx=\"128\" cy=\"198\" rx=\"72\" ry=\"40\" fill=\"{{furLight}}\"/></g>",
+     "weight": 3,
+     "faceAnchor": {
+      "x": 128,
+      "y": 158,
+      "scale": 0.95
+     },
+     "half": "M124 84A95 71 0 0 0 124 226Z"
+    },
+    {
+     "id": "rodent-head-guinea",
+     "svg": "<g><ellipse cx=\"58\" cy=\"118\" rx=\"24\" ry=\"15\" fill=\"{{furDark}}\" transform=\"rotate(35 58 118)\"/><ellipse cx=\"198\" cy=\"118\" rx=\"24\" ry=\"15\" fill=\"{{furDark}}\" transform=\"rotate(-35 198 118)\"/><ellipse cx=\"128\" cy=\"160\" rx=\"98\" ry=\"74\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"155\" rx=\"93\" ry=\"69\" fill=\"{{fur}}\"/><ellipse cx=\"69.2\" cy=\"151.1\" rx=\"23.5\" ry=\"11.8\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 69.2 151.1)\"/><ellipse cx=\"128\" cy=\"186\" rx=\"42\" ry=\"28\" fill=\"{{furLight}}\"/></g>",
+     "weight": 3,
+     "faceAnchor": {
+      "x": 128,
+      "y": 160,
+      "scale": 1
+     },
+     "half": "M124 86A93 69 0 0 0 124 224Z"
+    },
+    {
+     "id": "rodent-head-rat",
+     "svg": "<g><circle cx=\"67\" cy=\"97\" r=\"32\" fill=\"{{furDark}}\"/><circle cx=\"64\" cy=\"94\" r=\"32\" fill=\"{{fur}}\"/><circle cx=\"64\" cy=\"94\" r=\"20\" fill=\"#E7B6AE\"/><circle cx=\"195\" cy=\"97\" r=\"32\" fill=\"{{furDark}}\"/><circle cx=\"192\" cy=\"94\" r=\"32\" fill=\"{{fur}}\"/><circle cx=\"192\" cy=\"94\" r=\"20\" fill=\"#E7B6AE\"/><ellipse cx=\"128\" cy=\"160\" rx=\"82\" ry=\"70\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"155\" rx=\"77\" ry=\"65\" fill=\"{{fur}}\"/><ellipse cx=\"78.8\" cy=\"151.6\" rx=\"19.7\" ry=\"9.8\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 78.8 151.6)\"/><ellipse cx=\"128\" cy=\"188\" rx=\"32\" ry=\"24\" fill=\"{{furLight}}\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 160,
+      "scale": 0.9
+     },
+     "half": "M124 90A77 65 0 0 0 124 220Z"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "rodent-pattern-plain",
+     "svg": "",
+     "weight": 3
+    },
+    {
+     "id": "rodent-pattern-blaze",
+     "weight": 2,
+     "svg": "<g><path d=\"M128 92C134 118 138 140 144 166C136 174 120 174 112 166C118 140 122 118 128 92Z\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "rodent-pattern-half",
+     "svg": "<g><path d=\"{{half}}\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "rodent-pattern-spots",
+     "svg": "<g><circle cx=\"88\" cy=\"112\" r=\"10\" fill=\"{{furDark}}\"/><circle cx=\"172\" cy=\"108\" r=\"8\" fill=\"{{furDark}}\"/><circle cx=\"196\" cy=\"176\" r=\"9\" fill=\"{{furDark}}\"/><circle cx=\"64\" cy=\"182\" r=\"8\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "rodent-pattern-rosette",
+     "svg": "<g><circle cx=\"128\" cy=\"102\" r=\"18\" fill=\"{{furLight}}\"/><path d=\"M118 104Q128 90 138 104\" fill=\"none\" stroke=\"{{furDark}}\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-button",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"10\" ry=\"7\" fill=\"#C98579\"/></g>",
+     "weight": 3
+    },
+    {
+     "id": "nose-dot",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"9\" ry=\"6.5\" fill=\"#44403C\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "mouth-w",
+     "svg": "<g><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 3
+    },
+    {
+     "id": "mouth-smile",
+     "svg": "<g><path d=\"M114 180Q128 194 142 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-neutral",
+     "svg": "<g><path d=\"M118 186L138 186\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "whiskers": [
+    {
+     "id": "whiskers-none",
+     "svg": ""
+    },
+    {
+     "id": "whiskers-short",
+     "svg": "<g><path d=\"M84 180L56 176M84 188L56 192M172 180L200 176M172 188L200 192\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.45\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "whiskers-long",
+     "svg": "<g><path d=\"M80 178L36 170M80 186L34 190M176 178L220 170M176 186L222 190\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.45\"/></g>"
+    }
+   ]
+  },
+  "hedgehog": {
+   "label": "Kirpi",
+   "layers": [
+    "background",
+    "head",
+    "eyes",
+    "nose",
+    "mouth",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "hedgehog-head-round",
+     "svg": "<g><path d=\"M128 160L46.6 203Q14.9 201.5 36.4 179.1Q6.8 168.5 34.3 153.6Q9.5 134.7 40.5 128.6Q22.8 103.2 54.5 106.4Q45.4 76.8 75 88.9Q75.3 57.7 100.3 77.8Q109.9 47.8 128 74Q146.1 47.8 155.7 77.8Q180.7 57.7 181 88.9Q210.6 76.8 201.5 106.4Q233.2 103.2 215.5 128.6Q246.5 134.7 221.7 153.6Q249.2 168.5 219.6 179.1Q241.1 201.5 209.4 203Z\" fill=\"{{furDark}}\"/><path d=\"M128 160L49.1 186Q23.4 178.5 44 162.2Q22.4 147.1 47.5 138.2Q32.1 117.1 59.2 116.4Q51.6 91.4 77.8 99Q78.8 72.6 101.6 87.9Q111 62.8 128 84Q145 62.8 154.4 87.9Q177.2 72.6 178.2 99Q204.4 91.4 196.8 116.4Q223.9 117.1 208.5 138.2Q233.6 147.1 212 162.2Q232.6 178.5 206.9 186Z\" fill=\"#44403C\" opacity=\"0.12\"/><circle cx=\"87\" cy=\"123\" r=\"12\" fill=\"{{furDark}}\"/><circle cx=\"84\" cy=\"120\" r=\"12\" fill=\"{{fur}}\"/><circle cx=\"175\" cy=\"123\" r=\"12\" fill=\"{{furDark}}\"/><circle cx=\"172\" cy=\"120\" r=\"12\" fill=\"{{fur}}\"/><ellipse cx=\"128\" cy=\"172\" rx=\"74\" ry=\"62\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"167\" rx=\"69\" ry=\"57\" fill=\"{{fur}}\"/><ellipse cx=\"83.6\" cy=\"164.6\" rx=\"17.8\" ry=\"8.9\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 83.6 164.6)\"/><ellipse cx=\"128\" cy=\"194\" rx=\"32\" ry=\"22\" fill=\"{{furLight}}\"/></g>",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 168,
+      "scale": 0.82
+     },
+     "half": "M124 110A69 57 0 0 0 124 224Z"
+    },
+    {
+     "id": "hedgehog-head-pointy",
+     "svg": "<g><path d=\"M128 160L50.1 201Q18.6 200 40.3 178.2Q10.8 168.2 38.3 153.9Q13.4 135.6 44.2 130Q26.2 105.2 57.6 108.9Q48.1 79.7 77.3 92.2Q77 61.3 101.5 81.6Q110.5 51.7 128 78Q145.5 51.7 154.5 81.6Q179 61.3 178.7 92.2Q207.9 79.7 198.4 108.9Q229.8 105.2 211.8 130Q242.6 135.6 217.7 153.9Q245.2 168.2 215.7 178.2Q237.4 200 205.9 201Z\" fill=\"{{furDark}}\"/><path d=\"M128 160L52.8 184.6Q27.3 177.8 48 162.1Q26.4 147.7 51.4 139.4Q35.7 118.8 62.5 118.7Q54.5 94.2 80.2 102.2Q80.7 76.2 102.8 91.7Q111.7 66.7 128 88Q144.3 66.7 153.2 91.7Q175.3 76.2 175.8 102.2Q201.5 94.2 193.5 118.7Q220.3 118.8 204.6 139.4Q229.6 147.7 208 162.1Q228.7 177.8 203.2 184.6Z\" fill=\"#44403C\" opacity=\"0.12\"/><circle cx=\"89\" cy=\"127\" r=\"11\" fill=\"{{furDark}}\"/><circle cx=\"86\" cy=\"124\" r=\"11\" fill=\"{{fur}}\"/><circle cx=\"173\" cy=\"127\" r=\"11\" fill=\"{{furDark}}\"/><circle cx=\"170\" cy=\"124\" r=\"11\" fill=\"{{fur}}\"/><path d=\"M128 232C100 232 62 210 56 172C50 134 86 108 128 108C170 108 206 134 200 172C194 210 156 232 128 232Z\" fill=\"{{furDark}}\" transform=\"translate(5 6)\"/><path d=\"M128 232C100 232 62 210 56 172C50 134 86 108 128 108C170 108 206 134 200 172C194 210 156 232 128 232Z\" fill=\"{{fur}}\"/><ellipse cx=\"76\" cy=\"160\" rx=\"16\" ry=\"8\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 76 160)\"/><ellipse cx=\"128\" cy=\"204\" rx=\"26\" ry=\"20\" fill=\"{{furLight}}\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 172,
+      "scale": 0.8
+     }
+    }
+   ],
+   "eyes": [
+    {
+     "id": "eyes-dot",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"158\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"161.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+    },
+    {
+     "id": "eyes-round",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"103.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"163.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "eyes-sleepy",
+     "svg": "<g><path d=\"M84 138A14 14 0 0 0 112 138Z\" fill=\"#44403C\"/><path d=\"M144 138A14 14 0 0 0 172 138Z\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "eyes-happy",
+     "svg": "<g><path d=\"M86 144Q98 130 110 144M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-calm",
+     "svg": "<g><path d=\"M86 138Q98 150 110 138M146 138Q158 150 170 138\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-round",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"13\" ry=\"9.5\" fill=\"#44403C\"/><ellipse cx=\"123\" cy=\"157\" rx=\"4\" ry=\"2.5\" fill=\"#FFFFFF\" opacity=\"0.35\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "nose-dot",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"9\" ry=\"6.5\" fill=\"#44403C\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "mouth-smile",
+     "svg": "<g><path d=\"M114 180Q128 194 142 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-neutral",
+     "svg": "<g><path d=\"M118 186L138 186\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-w",
+     "svg": "<g><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "accessory": [
+    {
+     "id": "acc-none",
+     "svg": "",
+     "weight": 14
+    },
+    {
+     "id": "acc-bow",
+     "svg": "<g><path d=\"M128 228L94 210C88 222 88 236 94 248Z\" fill=\"{{accent}}\"/><path d=\"M128 228L162 210C168 222 168 236 162 248Z\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"#44403C\" opacity=\"0.12\"/></g>"
+    },
+    {
+     "id": "acc-scarf",
+     "svg": "<g><path d=\"M54 210Q128 246 202 210L206 232Q128 270 50 232Z\" fill=\"{{accent}}\"/><path d=\"M150 232L172 228L178 256L148 256Z\" fill=\"{{accent}}\"/><path d=\"M150 232L172 228L178 256L148 256Z\" fill=\"#44403C\" opacity=\"0.12\"/><path d=\"M84 228L88 242M112 236L114 252M144 236L142 252M172 228L168 242\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.35\"/></g>"
+    },
+    {
+     "id": "acc-bandage",
+     "svg": "<g><rect x=\"146\" y=\"88\" width=\"44\" height=\"16\" rx=\"8\" fill=\"#EBCFA6\" transform=\"rotate(-18 168 96)\"/><rect x=\"161\" y=\"88\" width=\"14\" height=\"16\" rx=\"0\" fill=\"#DDBB8C\" transform=\"rotate(-18 168 96)\"/></g>"
+    }
+   ]
+  },
+  "ferret": {
+   "label": "Gelincik",
+   "layers": [
+    "background",
+    "head",
+    "pattern",
+    "eyes",
+    "nose",
+    "mouth",
+    "whiskers",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "ferret-head-round",
+     "svg": "<g><circle cx=\"73\" cy=\"99\" r=\"20\" fill=\"{{furDark}}\"/><circle cx=\"70\" cy=\"96\" r=\"20\" fill=\"{{fur}}\"/><circle cx=\"70\" cy=\"96\" r=\"10\" fill=\"{{furLight}}\"/><circle cx=\"189\" cy=\"99\" r=\"20\" fill=\"{{furDark}}\"/><circle cx=\"186\" cy=\"96\" r=\"20\" fill=\"{{fur}}\"/><circle cx=\"186\" cy=\"96\" r=\"10\" fill=\"{{furLight}}\"/><ellipse cx=\"128\" cy=\"152\" rx=\"86\" ry=\"74\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"147\" rx=\"81\" ry=\"69\" fill=\"{{fur}}\"/><ellipse cx=\"76.4\" cy=\"143.1\" rx=\"20.6\" ry=\"10.3\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 76.4 143.1)\"/><ellipse cx=\"128\" cy=\"188\" rx=\"40\" ry=\"28\" fill=\"{{furLight}}\"/></g>",
+     "weight": 2,
+     "half": "M124 78A81 69 0 0 0 124 216Z"
+    },
+    {
+     "id": "ferret-head-slim",
+     "svg": "<g><circle cx=\"79\" cy=\"99\" r=\"20\" fill=\"{{furDark}}\"/><circle cx=\"76\" cy=\"96\" r=\"20\" fill=\"{{fur}}\"/><circle cx=\"76\" cy=\"96\" r=\"10\" fill=\"{{furLight}}\"/><circle cx=\"183\" cy=\"99\" r=\"20\" fill=\"{{furDark}}\"/><circle cx=\"180\" cy=\"96\" r=\"20\" fill=\"{{fur}}\"/><circle cx=\"180\" cy=\"96\" r=\"10\" fill=\"{{furLight}}\"/><ellipse cx=\"128\" cy=\"150\" rx=\"74\" ry=\"80\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"145\" rx=\"69\" ry=\"75\" fill=\"{{fur}}\"/><ellipse cx=\"83.6\" cy=\"140.4\" rx=\"17.8\" ry=\"8.9\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 83.6 140.4)\"/><ellipse cx=\"128\" cy=\"190\" rx=\"32\" ry=\"30\" fill=\"{{furLight}}\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 150,
+      "scale": 0.9
+     },
+     "half": "M124 70A69 75 0 0 0 124 220Z"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "ferret-pattern-plain",
+     "svg": "",
+     "weight": 2
+    },
+    {
+     "id": "ferret-pattern-mask",
+     "weight": 3,
+     "svg": "<g><path d=\"M52 140C60 116 100 116 128 130C156 116 196 116 204 140C200 162 160 166 128 152C96 166 56 162 52 140Z\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "ferret-pattern-blaze",
+     "svg": "<g><path d=\"M128 74C134 100 136 120 140 144C134 150 122 150 116 144C120 120 122 100 128 74Z\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "ferret-pattern-panda",
+     "svg": "<g><path d=\"M52 140C60 116 100 116 128 130C156 116 196 116 204 140C200 162 160 166 128 152C96 166 56 162 52 140Z\" fill=\"{{furDark}}\"/><path d=\"M128 74C134 100 136 120 140 144C134 150 122 150 116 144C120 120 122 100 128 74Z\" fill=\"{{furLight}}\"/></g>"
+    }
+   ],
+   "eyes": [
+    {
+     "id": "eyes-dot",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"158\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"161.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+    },
+    {
+     "id": "eyes-round",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"103.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"163.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "eyes-sleepy",
+     "svg": "<g><path d=\"M84 138A14 14 0 0 0 112 138Z\" fill=\"#44403C\"/><path d=\"M144 138A14 14 0 0 0 172 138Z\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "eyes-happy",
+     "svg": "<g><path d=\"M86 144Q98 130 110 144M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-wink",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><path d=\"M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-button",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"10\" ry=\"7\" fill=\"#C98579\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "nose-dot",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"9\" ry=\"6.5\" fill=\"#44403C\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "mouth-w",
+     "svg": "<g><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "mouth-smile",
+     "svg": "<g><path d=\"M114 180Q128 194 142 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-neutral",
+     "svg": "<g><path d=\"M118 186L138 186\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "whiskers": [
+    {
+     "id": "whiskers-short",
+     "svg": "<g><path d=\"M84 180L56 176M84 188L56 192M172 180L200 176M172 188L200 192\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.45\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "whiskers-long",
+     "svg": "<g><path d=\"M80 178L36 170M80 186L34 190M176 178L220 170M176 186L222 190\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.45\"/></g>"
+    },
+    {
+     "id": "whiskers-none",
+     "svg": ""
+    }
+   ]
+  },
+  "turtle": {
+   "label": "Kaplumbağa",
+   "layers": [
+    "background",
+    "head",
+    "pattern",
+    "eyes",
+    "nose",
+    "mouth",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "turtle-head-round",
+     "svg": "<g><path d=\"M100 136L100 196C112 204 144 204 156 196L156 136Z\" fill=\"{{fur}}\"/><path d=\"M8 256C8 196 60 168 128 168C196 168 248 196 248 256Z\" fill=\"{{furDark}}\" transform=\"translate(4 5)\"/><path d=\"M8 256C8 196 60 168 128 168C196 168 248 196 248 256Z\" fill=\"{{furDark}}\"/><path d=\"M8 256C8 196 60 168 128 168C196 168 248 196 248 256Z\" fill=\"#44403C\" opacity=\"0.12\" transform=\"translate(5 6)\"/><ellipse cx=\"128\" cy=\"212\" rx=\"32\" ry=\"18\" fill=\"{{furLight}}\" opacity=\"0.4\"/><ellipse cx=\"66\" cy=\"230\" rx=\"24\" ry=\"15\" fill=\"{{furLight}}\" opacity=\"0.4\"/><ellipse cx=\"190\" cy=\"230\" rx=\"24\" ry=\"15\" fill=\"{{furLight}}\" opacity=\"0.4\"/><ellipse cx=\"128\" cy=\"128\" rx=\"72\" ry=\"66\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"123\" rx=\"67\" ry=\"61\" fill=\"{{fur}}\"/><ellipse cx=\"84.8\" cy=\"120.1\" rx=\"17.3\" ry=\"8.6\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 84.8 120.1)\"/></g>",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 132,
+      "scale": 0.85
+     },
+     "half": "M124 62A67 61 0 0 0 124 184Z"
+    },
+    {
+     "id": "turtle-head-long",
+     "svg": "<g><path d=\"M100 136L100 196C112 204 144 204 156 196L156 136Z\" fill=\"{{fur}}\"/><path d=\"M8 256C8 196 60 168 128 168C196 168 248 196 248 256Z\" fill=\"{{furDark}}\" transform=\"translate(4 5)\"/><path d=\"M8 256C8 196 60 168 128 168C196 168 248 196 248 256Z\" fill=\"{{furDark}}\"/><path d=\"M8 256C8 196 60 168 128 168C196 168 248 196 248 256Z\" fill=\"#44403C\" opacity=\"0.12\" transform=\"translate(5 6)\"/><ellipse cx=\"128\" cy=\"212\" rx=\"32\" ry=\"18\" fill=\"{{furLight}}\" opacity=\"0.4\"/><ellipse cx=\"66\" cy=\"230\" rx=\"24\" ry=\"15\" fill=\"{{furLight}}\" opacity=\"0.4\"/><ellipse cx=\"190\" cy=\"230\" rx=\"24\" ry=\"15\" fill=\"{{furLight}}\" opacity=\"0.4\"/><ellipse cx=\"128\" cy=\"124\" rx=\"62\" ry=\"72\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"119\" rx=\"57\" ry=\"67\" fill=\"{{fur}}\"/><ellipse cx=\"90.8\" cy=\"115.4\" rx=\"14.9\" ry=\"7.4\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 90.8 115.4)\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 130,
+      "scale": 0.8
+     },
+     "half": "M124 52A57 67 0 0 0 124 186Z"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "turtle-pattern-plain",
+     "svg": "",
+     "weight": 2
+    },
+    {
+     "id": "turtle-pattern-spots",
+     "svg": "<g><circle cx=\"98\" cy=\"92\" r=\"7\" fill=\"{{furLight}}\"/><circle cx=\"160\" cy=\"88\" r=\"6\" fill=\"{{furLight}}\"/><circle cx=\"84\" cy=\"150\" r=\"5\" fill=\"{{furLight}}\"/><circle cx=\"172\" cy=\"152\" r=\"6\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "turtle-pattern-stripes",
+     "svg": "<g><path d=\"M72 118Q78 148 96 174M184 118Q178 148 160 174M128 66L128 86\" fill=\"none\" stroke=\"{{furLight}}\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "turtle-pattern-redear",
+     "svg": "<g><ellipse cx=\"72\" cy=\"126\" rx=\"13\" ry=\"8\" fill=\"#D9775B\"/><ellipse cx=\"184\" cy=\"126\" rx=\"13\" ry=\"8\" fill=\"#D9775B\"/></g>"
+    }
+   ],
+   "eyes": [
+    {
+     "id": "eyes-dot",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"158\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"161.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+    },
+    {
+     "id": "eyes-round",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"103.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"163.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "eyes-sleepy",
+     "svg": "<g><path d=\"M84 138A14 14 0 0 0 112 138Z\" fill=\"#44403C\"/><path d=\"M144 138A14 14 0 0 0 172 138Z\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "eyes-calm",
+     "svg": "<g><path d=\"M86 138Q98 150 110 138M146 138Q158 150 170 138\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-happy",
+     "svg": "<g><path d=\"M86 144Q98 130 110 144M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-nostrils",
+     "svg": "<g><circle cx=\"120\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/><circle cx=\"136\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "turtle-mouth-smile",
+     "svg": "<g><path d=\"M98 176Q128 196 158 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "turtle-mouth-flat",
+     "svg": "<g><path d=\"M104 182Q128 188 152 182\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "accessory": [
+    {
+     "id": "acc-none",
+     "svg": "",
+     "weight": 14
+    },
+    {
+     "id": "acc-bow",
+     "svg": "<g><path d=\"M128 228L94 210C88 222 88 236 94 248Z\" fill=\"{{accent}}\"/><path d=\"M128 228L162 210C168 222 168 236 162 248Z\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"#44403C\" opacity=\"0.12\"/></g>"
+    },
+    {
+     "id": "acc-bandage",
+     "svg": "<g><rect x=\"146\" y=\"88\" width=\"44\" height=\"16\" rx=\"8\" fill=\"#EBCFA6\" transform=\"rotate(-18 168 96)\"/><rect x=\"161\" y=\"88\" width=\"14\" height=\"16\" rx=\"0\" fill=\"#DDBB8C\" transform=\"rotate(-18 168 96)\"/></g>"
+    }
+   ]
+  },
+  "lizard": {
+   "label": "Kertenkele",
+   "layers": [
+    "background",
+    "head",
+    "pattern",
+    "eyes",
+    "nose",
+    "mouth",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "lizard-head-iguana",
+     "svg": "<g><path d=\"M128 150L64.1 105.3Q55.9 80 81.4 87.4Q81.6 60.9 103.5 76Q112 50.8 128 72Q144 50.8 152.5 76Q174.4 60.9 174.6 87.4Q200.1 80 191.9 105.3Z\" fill=\"{{furDark}}\"/><path d=\"M96 190C92 232 120 252 132 252C150 250 164 228 160 192Z\" fill=\"{{fur}}\" transform=\"translate(3 3)\"/><path d=\"M96 190C92 232 120 252 132 252C150 250 164 228 160 192Z\" fill=\"{{furLight}}\"/><ellipse cx=\"128\" cy=\"140\" rx=\"82\" ry=\"70\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"135\" rx=\"77\" ry=\"65\" fill=\"{{fur}}\"/><ellipse cx=\"78.8\" cy=\"131.6\" rx=\"19.7\" ry=\"9.8\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 78.8 131.6)\"/><circle cx=\"64\" cy=\"160\" r=\"12\" fill=\"{{furLight}}\"/><circle cx=\"192\" cy=\"160\" r=\"12\" fill=\"{{furLight}}\"/></g>",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 140,
+      "scale": 0.9
+     },
+     "half": "M124 70A77 65 0 0 0 124 200Z"
+    },
+    {
+     "id": "lizard-head-bearded",
+     "svg": "<g><path d=\"M128 160L218.6 172.5Q238.7 191.4 209.4 193.6Q221.8 217.9 192.4 211.4Q196 238.9 169.3 224.3Q163.7 252.4 142.2 231.1Q128 257 113.8 231.1Q92.3 252.4 86.7 224.3Q60 238.9 63.6 211.4Q34.2 217.9 46.6 193.6Q17.3 191.4 37.4 172.5Z\" fill=\"{{furDark}}\"/><path d=\"M128 120L39.4 110.3Q27.9 93.1 52.4 89.6Q51 68.7 77.3 73.7Q86.2 52.3 110.2 65.1Q128 46.5 145.8 65.1Q169.8 52.3 178.7 73.7Q205 68.7 203.6 89.6Q228.1 93.1 216.6 110.3Z\" fill=\"{{furDark}}\"/><path d=\"M128 220C82 220 40 196 38 156C36 112 76 76 128 76C180 76 220 112 218 156C216 196 174 220 128 220Z\" fill=\"{{furDark}}\" transform=\"translate(5 6)\"/><path d=\"M128 220C82 220 40 196 38 156C36 112 76 76 128 76C180 76 220 112 218 156C216 196 174 220 128 220Z\" fill=\"{{fur}}\"/><ellipse cx=\"70\" cy=\"130\" rx=\"18\" ry=\"9\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 70 130)\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 146,
+      "scale": 0.95
+     },
+     "half": "M128 76C76 76 36 112 38 156C40 196 82 220 128 220Z"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "lizard-pattern-plain",
+     "svg": "",
+     "weight": 2
+    },
+    {
+     "id": "lizard-pattern-spots",
+     "svg": "<g><circle cx=\"92\" cy=\"100\" r=\"8\" fill=\"{{furDark}}\"/><circle cx=\"164\" cy=\"96\" r=\"7\" fill=\"{{furDark}}\"/><circle cx=\"70\" cy=\"140\" r=\"6\" fill=\"{{furDark}}\"/><circle cx=\"186\" cy=\"142\" r=\"7\" fill=\"{{furDark}}\"/><circle cx=\"128\" cy=\"92\" r=\"5\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "lizard-pattern-bands",
+     "svg": "<g><path d=\"M84 100Q128 84 172 100M74 122Q90 116 96 118M160 118Q166 116 182 122\" fill=\"none\" stroke=\"{{furDark}}\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "lizard-pattern-cheeks",
+     "svg": "<g><circle cx=\"76\" cy=\"172\" r=\"10\" fill=\"#D9775B\" opacity=\"0.8\"/><circle cx=\"180\" cy=\"172\" r=\"10\" fill=\"#D9775B\" opacity=\"0.8\"/></g>"
+    }
+   ],
+   "eyes": [
+    {
+     "id": "eyes-dot",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"158\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"161.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+    },
+    {
+     "id": "eyes-round",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"103.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"163.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "eyes-sleepy",
+     "svg": "<g><path d=\"M84 138A14 14 0 0 0 112 138Z\" fill=\"#44403C\"/><path d=\"M144 138A14 14 0 0 0 172 138Z\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "eyes-calm",
+     "svg": "<g><path d=\"M86 138Q98 150 110 138M146 138Q158 150 170 138\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-happy",
+     "svg": "<g><path d=\"M86 144Q98 130 110 144M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-nostrils",
+     "svg": "<g><circle cx=\"120\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/><circle cx=\"136\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "lizard-mouth-wide",
+     "svg": "<g><path d=\"M76 172Q128 200 180 172\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "lizard-mouth-flat",
+     "svg": "<g><path d=\"M84 180Q128 190 172 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "accessory": [
+    {
+     "id": "acc-none",
+     "svg": "",
+     "weight": 14
+    },
+    {
+     "id": "acc-bow",
+     "svg": "<g><path d=\"M128 228L94 210C88 222 88 236 94 248Z\" fill=\"{{accent}}\"/><path d=\"M128 228L162 210C168 222 168 236 162 248Z\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"#44403C\" opacity=\"0.12\"/></g>"
+    },
+    {
+     "id": "acc-bandage",
+     "svg": "<g><rect x=\"146\" y=\"88\" width=\"44\" height=\"16\" rx=\"8\" fill=\"#EBCFA6\" transform=\"rotate(-18 168 96)\"/><rect x=\"161\" y=\"88\" width=\"14\" height=\"16\" rx=\"0\" fill=\"#DDBB8C\" transform=\"rotate(-18 168 96)\"/></g>"
+    }
+   ]
+  },
+  "snake": {
+   "label": "Yılan",
+   "layers": [
+    "background",
+    "head",
+    "pattern",
+    "eyes",
+    "nose",
+    "mouth",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "snake-head-round",
+     "svg": "<g><ellipse cx=\"128\" cy=\"236\" rx=\"114\" ry=\"34\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"231\" rx=\"109\" ry=\"29\" fill=\"{{fur}}\"/><ellipse cx=\"128\" cy=\"206\" rx=\"88\" ry=\"28\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"201\" rx=\"83\" ry=\"23\" fill=\"{{fur}}\"/><path d=\"M102 130C100 170 104 190 108 206L148 206C152 190 156 170 154 130Z\" fill=\"{{fur}}\"/><ellipse cx=\"128\" cy=\"118\" rx=\"74\" ry=\"58\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"113\" rx=\"69\" ry=\"53\" fill=\"{{fur}}\"/><ellipse cx=\"83.6\" cy=\"111\" rx=\"17.8\" ry=\"8.9\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 83.6 111)\"/></g>",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 118,
+      "scale": 0.85
+     },
+     "half": "M124 60A69 53 0 0 0 124 166Z"
+    },
+    {
+     "id": "snake-head-spade",
+     "svg": "<g><ellipse cx=\"128\" cy=\"236\" rx=\"114\" ry=\"34\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"231\" rx=\"109\" ry=\"29\" fill=\"{{fur}}\"/><ellipse cx=\"128\" cy=\"206\" rx=\"88\" ry=\"28\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"201\" rx=\"83\" ry=\"23\" fill=\"{{fur}}\"/><path d=\"M102 130C100 170 104 190 108 206L148 206C152 190 156 170 154 130Z\" fill=\"{{fur}}\"/><path d=\"M128 178C100 178 64 162 56 128C48 92 82 62 128 62C174 62 208 92 200 128C192 162 156 178 128 178Z\" fill=\"{{furDark}}\" transform=\"translate(5 6)\"/><path d=\"M128 178C100 178 64 162 56 128C48 92 82 62 128 62C174 62 208 92 200 128C192 162 156 178 128 178Z\" fill=\"{{fur}}\"/><ellipse cx=\"76\" cy=\"108\" rx=\"16\" ry=\"8\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 76 108)\"/></g>",
+     "faceAnchor": {
+      "x": 128,
+      "y": 116,
+      "scale": 0.85
+     },
+     "half": "M128 62C82 62 48 92 56 128C64 162 100 178 128 178Z"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "snake-pattern-plain",
+     "svg": "",
+     "weight": 2
+    },
+    {
+     "id": "snake-pattern-bands",
+     "weight": 2,
+     "svg": "<g><ellipse cx=\"56\" cy=\"234\" rx=\"8\" ry=\"18\" fill=\"{{furDark}}\" transform=\"rotate(-20 56 234)\"/><ellipse cx=\"100\" cy=\"240\" rx=\"8\" ry=\"20\" fill=\"{{furDark}}\" transform=\"rotate(-8 100 240)\"/><ellipse cx=\"156\" cy=\"240\" rx=\"8\" ry=\"20\" fill=\"{{furDark}}\" transform=\"rotate(8 156 240)\"/><ellipse cx=\"200\" cy=\"234\" rx=\"8\" ry=\"18\" fill=\"{{furDark}}\" transform=\"rotate(20 200 234)\"/><ellipse cx=\"82\" cy=\"204\" rx=\"7\" ry=\"15\" fill=\"{{furDark}}\" transform=\"rotate(-14 82 204)\"/><ellipse cx=\"174\" cy=\"204\" rx=\"7\" ry=\"15\" fill=\"{{furDark}}\" transform=\"rotate(14 174 204)\"/><ellipse cx=\"128\" cy=\"160\" rx=\"22\" ry=\"7\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "snake-pattern-spots",
+     "svg": "<g><circle cx=\"100\" cy=\"84\" r=\"7\" fill=\"{{furDark}}\"/><circle cx=\"158\" cy=\"82\" r=\"6\" fill=\"{{furDark}}\"/><circle cx=\"72\" cy=\"232\" r=\"8\" fill=\"{{furDark}}\"/><circle cx=\"128\" cy=\"244\" r=\"8\" fill=\"{{furDark}}\"/><circle cx=\"184\" cy=\"232\" r=\"8\" fill=\"{{furDark}}\"/><circle cx=\"110\" cy=\"204\" r=\"6\" fill=\"{{furDark}}\"/><circle cx=\"150\" cy=\"206\" r=\"6\" fill=\"{{furDark}}\"/></g>"
+    },
+    {
+     "id": "snake-pattern-diamond",
+     "svg": "<g><path d=\"M128 70L148 88L128 106L108 88Z\" fill=\"{{furDark}}\" stroke=\"{{furDark}}\" stroke-width=\"8\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "snake-pattern-belly",
+     "svg": "<g><ellipse cx=\"128\" cy=\"246\" rx=\"74\" ry=\"10\" fill=\"{{furLight}}\"/><ellipse cx=\"128\" cy=\"216\" rx=\"54\" ry=\"8\" fill=\"{{furLight}}\"/><rect x=\"116\" y=\"150\" width=\"24\" height=\"56\" rx=\"12\" fill=\"{{furLight}}\"/></g>"
+    }
+   ],
+   "eyes": [
+    {
+     "id": "snake-eyes-slit",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#EBD58C\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#EBD58C\"/><ellipse cx=\"98\" cy=\"140\" rx=\"4\" ry=\"12\" fill=\"#44403C\"/><ellipse cx=\"158\" cy=\"140\" rx=\"4\" ry=\"12\" fill=\"#44403C\"/></g>",
+     "weight": 3,
+     "sclera": true
+    },
+    {
+     "id": "eyes-dot",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"158\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"161.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+    },
+    {
+     "id": "eyes-round",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"103.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"163.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "eyes-happy",
+     "svg": "<g><path d=\"M86 144Q98 130 110 144M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-calm",
+     "svg": "<g><path d=\"M86 138Q98 150 110 138M146 138Q158 150 170 138\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-nostrils",
+     "svg": "<g><circle cx=\"120\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/><circle cx=\"136\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "snake-mouth-smile",
+     "svg": "<g><path d=\"M100 176Q128 192 156 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "snake-mouth-tongue",
+     "svg": "<g><path d=\"M128 186L128 204M128 204L119 214M128 204L137 214\" fill=\"none\" stroke=\"#D9775B\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M100 176Q128 192 156 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 2
+    }
+   ],
+   "accessory": [
+    {
+     "id": "acc-none",
+     "svg": "",
+     "weight": 14
+    },
+    {
+     "id": "acc-bow",
+     "svg": "<g><path d=\"M128 228L94 210C88 222 88 236 94 248Z\" fill=\"{{accent}}\"/><path d=\"M128 228L162 210C168 222 168 236 162 248Z\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"#44403C\" opacity=\"0.12\"/></g>"
+    },
+    {
+     "id": "acc-bandage",
+     "svg": "<g><rect x=\"146\" y=\"88\" width=\"44\" height=\"16\" rx=\"8\" fill=\"#EBCFA6\" transform=\"rotate(-18 168 96)\"/><rect x=\"161\" y=\"88\" width=\"14\" height=\"16\" rx=\"0\" fill=\"#DDBB8C\" transform=\"rotate(-18 168 96)\"/></g>"
+    }
+   ]
+  },
+  "fish": {
+   "label": "Balık",
+   "layers": [
+    "background",
+    "head",
+    "pattern",
+    "eyes",
+    "mouth"
+   ],
+   "head": [
+    {
+     "id": "fish-head-round",
+     "svg": "<g><path d=\"M196 136C220 100 244 84 250 90C254 110 246 130 236 136C246 142 254 162 250 182C244 188 220 172 196 136Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M196 136C220 100 244 84 250 90C254 110 246 130 236 136C246 142 254 162 250 182C244 188 220 172 196 136Z\" fill=\"{{fur}}\"/><path d=\"M96 74C116 40 160 40 178 78Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M96 74C116 40 160 40 178 78Z\" fill=\"{{fur}}\"/><ellipse cx=\"122\" cy=\"136\" rx=\"96\" ry=\"78\" fill=\"{{furDark}}\"/><ellipse cx=\"118\" cy=\"131\" rx=\"91\" ry=\"73\" fill=\"{{fur}}\"/><ellipse cx=\"64.4\" cy=\"126.6\" rx=\"23\" ry=\"11.5\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 64.4 126.6)\"/><ellipse cx=\"140\" cy=\"170\" rx=\"24\" ry=\"12\" fill=\"{{furDark}}\" opacity=\"0.7\" transform=\"rotate(-20 140 170)\"/></g>",
+     "weight": 3,
+     "half": "M118 58A91 73 0 0 0 118 204Z"
+    },
+    {
+     "id": "fish-head-long",
+     "svg": "<g><path d=\"M204 136C226 108 246 92 252 98C246 114 240 126 236 136C240 146 246 158 252 174C246 180 226 164 204 136Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M204 136C226 108 246 92 252 98C246 114 240 126 236 136C240 146 246 158 252 174C246 180 226 164 204 136Z\" fill=\"{{fur}}\"/><path d=\"M108 90C124 70 156 70 170 92Z\" fill=\"{{furDark}}\" transform=\"translate(3 3)\"/><path d=\"M108 90C124 70 156 70 170 92Z\" fill=\"{{fur}}\"/><ellipse cx=\"124\" cy=\"136\" rx=\"104\" ry=\"56\" fill=\"{{furDark}}\"/><ellipse cx=\"120\" cy=\"131\" rx=\"99\" ry=\"51\" fill=\"{{fur}}\"/><ellipse cx=\"61.6\" cy=\"129.3\" rx=\"25\" ry=\"12.5\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 61.6 129.3)\"/><ellipse cx=\"140\" cy=\"160\" rx=\"20\" ry=\"9\" fill=\"{{furDark}}\" opacity=\"0.7\" transform=\"rotate(-20 140 160)\"/></g>",
+     "weight": 2,
+     "half": "M120 80A99 51 0 0 0 120 182Z"
+    },
+    {
+     "id": "fish-head-betta",
+     "svg": "<g><path d=\"M176 136C210 70 256 56 256 100C256 120 240 128 250 140C258 162 250 204 224 212C200 216 188 172 176 136Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M176 136C210 70 256 56 256 100C256 120 240 128 250 140C258 162 250 204 224 212C200 216 188 172 176 136Z\" fill=\"{{fur}}\"/><path d=\"M84 88C96 34 160 26 188 62C196 74 186 90 176 96Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M84 88C96 34 160 26 188 62C196 74 186 90 176 96Z\" fill=\"{{fur}}\"/><path d=\"M100 184C110 230 160 244 180 220C186 210 176 196 166 190Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M100 184C110 230 160 244 180 220C186 210 176 196 166 190Z\" fill=\"{{fur}}\"/><ellipse cx=\"116\" cy=\"136\" rx=\"84\" ry=\"60\" fill=\"{{furDark}}\"/><ellipse cx=\"112\" cy=\"131\" rx=\"79\" ry=\"55\" fill=\"{{fur}}\"/><ellipse cx=\"65.6\" cy=\"128.8\" rx=\"20.2\" ry=\"10.1\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 65.6 128.8)\"/></g>",
+     "weight": 2,
+     "half": "M112 76A79 55 0 0 0 112 186Z"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "fish-pattern-plain",
+     "svg": "",
+     "weight": 2
+    },
+    {
+     "id": "fish-pattern-spots",
+     "svg": "<g><circle cx=\"130\" cy=\"110\" r=\"8\" fill=\"{{furLight}}\"/><circle cx=\"156\" cy=\"130\" r=\"6\" fill=\"{{furLight}}\"/><circle cx=\"118\" cy=\"160\" r=\"7\" fill=\"{{furLight}}\"/><circle cx=\"150\" cy=\"158\" r=\"5\" fill=\"{{furLight}}\"/><circle cx=\"102\" cy=\"132\" r=\"5\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "fish-pattern-stripes",
+     "weight": 2,
+     "svg": "<g><path d=\"M112 98L112 174M152 100L152 170\" fill=\"none\" stroke=\"{{furLight}}\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "fish-pattern-belly",
+     "weight": 2,
+     "svg": "<g><ellipse cx=\"118\" cy=\"166\" rx=\"64\" ry=\"16\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "fish-pattern-scales",
+     "svg": "<g><path d=\"M110 112Q118 124 126 112M130 112Q138 124 146 112M150 112Q158 124 166 112M120 134Q128 146 136 134M140 134Q148 146 156 134\" fill=\"none\" stroke=\"{{furDark}}\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.55\"/></g>"
+    }
+   ],
+   "eyes": [
+    {
+     "id": "fish-eye-round",
+     "svg": "<g><circle cx=\"76\" cy=\"120\" r=\"19\" fill=\"#FFFCF7\"/><circle cx=\"72\" cy=\"121\" r=\"12\" fill=\"#44403C\"/><circle cx=\"68\" cy=\"117\" r=\"4\" fill=\"#FFFFFF\"/></g>",
+     "weight": 3,
+     "sclera": true
+    },
+    {
+     "id": "fish-eye-dot",
+     "svg": "<g><circle cx=\"76\" cy=\"120\" r=\"11\" fill=\"#44403C\"/><circle cx=\"73\" cy=\"117\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+    },
+    {
+     "id": "fish-eye-big",
+     "svg": "<g><circle cx=\"78\" cy=\"118\" r=\"24\" fill=\"#FFFCF7\"/><circle cx=\"74\" cy=\"120\" r=\"16\" fill=\"#44403C\"/><circle cx=\"69\" cy=\"114\" r=\"5.5\" fill=\"#FFFFFF\"/><circle cx=\"78\" cy=\"126\" r=\"2.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "fish-eye-happy",
+     "svg": "<g><path d=\"M62 124Q76 106 90 124\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "fish-mouth-smile",
+     "svg": "<g><path d=\"M34 140Q42 152 56 148\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "fish-mouth-o",
+     "svg": "<g><ellipse cx=\"40\" cy=\"146\" rx=\"7\" ry=\"9\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "fish-mouth-kiss",
+     "svg": "<g><ellipse cx=\"36\" cy=\"144\" rx=\"9\" ry=\"11\" fill=\"#D98A7E\"/><ellipse cx=\"36\" cy=\"144\" rx=\"3.5\" ry=\"5.5\" fill=\"#44403C\"/></g>"
+    }
+   ]
+  },
+  "farm": {
+   "label": "Çiftlik hayvanı",
+   "layers": [
+    "background",
+    "head",
+    "pattern",
+    "eyes",
+    "nose",
+    "mouth",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "farm-head-goat",
+     "svg": "<g><path d=\"M98 74C92 50 98 34 110 28C108 44 110 58 114 72Z\" fill=\"#CFC1AA\"/><path d=\"M158 74C164 50 158 34 146 28C148 44 146 58 142 72Z\" fill=\"#CFC1AA\"/><ellipse cx=\"55\" cy=\"122\" rx=\"30\" ry=\"13\" fill=\"{{furDark}}\" transform=\"rotate(18 55 122)\"/><ellipse cx=\"52\" cy=\"118\" rx=\"30\" ry=\"13\" fill=\"{{fur}}\" transform=\"rotate(18 52 118)\"/><ellipse cx=\"201\" cy=\"122\" rx=\"30\" ry=\"13\" fill=\"{{furDark}}\" transform=\"rotate(-18 201 122)\"/><ellipse cx=\"204\" cy=\"118\" rx=\"30\" ry=\"13\" fill=\"{{fur}}\" transform=\"rotate(-18 204 118)\"/><ellipse cx=\"56\" cy=\"118\" rx=\"16.5\" ry=\"5.9\" fill=\"{{furLight}}\" transform=\"rotate(18 56 118)\"/><ellipse cx=\"200\" cy=\"118\" rx=\"16.5\" ry=\"5.9\" fill=\"{{furLight}}\" transform=\"rotate(-18 200 118)\"/><ellipse cx=\"128\" cy=\"150\" rx=\"70\" ry=\"84\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"145\" rx=\"65\" ry=\"79\" fill=\"{{fur}}\"/><ellipse cx=\"86\" cy=\"139.9\" rx=\"16.8\" ry=\"8.4\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 86 139.9)\"/><path d=\"M114 222C114 244 124 252 128 252C132 252 142 244 142 222Z\" fill=\"{{fur}}\" transform=\"translate(2 3)\"/><path d=\"M114 222C114 244 124 252 128 252C132 252 142 244 142 222Z\" fill=\"{{furLight}}\"/></g>",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 144,
+      "scale": 0.9
+     },
+     "muzzleAnchor": {
+      "x": 128,
+      "y": 170,
+      "scale": 0.9
+     },
+     "half": "M124 66A65 79 0 0 0 124 224Z"
+    },
+    {
+     "id": "farm-head-sheep",
+     "svg": "<g><ellipse cx=\"61\" cy=\"132\" rx=\"30\" ry=\"12\" fill=\"{{furDark}}\" transform=\"rotate(14 61 132)\"/><ellipse cx=\"58\" cy=\"128\" rx=\"30\" ry=\"12\" fill=\"{{fur}}\" transform=\"rotate(14 58 128)\"/><ellipse cx=\"195\" cy=\"132\" rx=\"30\" ry=\"12\" fill=\"{{furDark}}\" transform=\"rotate(-14 195 132)\"/><ellipse cx=\"198\" cy=\"128\" rx=\"30\" ry=\"12\" fill=\"{{fur}}\" transform=\"rotate(-14 198 128)\"/><ellipse cx=\"62\" cy=\"128\" rx=\"16.5\" ry=\"5.4\" fill=\"{{furLight}}\" transform=\"rotate(14 62 128)\"/><ellipse cx=\"194\" cy=\"128\" rx=\"16.5\" ry=\"5.4\" fill=\"{{furLight}}\" transform=\"rotate(-14 194 128)\"/><ellipse cx=\"128\" cy=\"162\" rx=\"58\" ry=\"70\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"157\" rx=\"53\" ry=\"65\" fill=\"{{fur}}\"/><ellipse cx=\"93.2\" cy=\"153.6\" rx=\"13.9\" ry=\"7\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 93.2 153.6)\"/><circle cx=\"81\" cy=\"104\" r=\"26\" fill=\"{{furDark}}\" opacity=\"0.5\"/><circle cx=\"103\" cy=\"80\" r=\"26\" fill=\"{{furDark}}\" opacity=\"0.5\"/><circle cx=\"131\" cy=\"70\" r=\"26\" fill=\"{{furDark}}\" opacity=\"0.5\"/><circle cx=\"159\" cy=\"80\" r=\"26\" fill=\"{{furDark}}\" opacity=\"0.5\"/><circle cx=\"181\" cy=\"104\" r=\"26\" fill=\"{{furDark}}\" opacity=\"0.5\"/><circle cx=\"71\" cy=\"134\" r=\"22\" fill=\"{{furDark}}\" opacity=\"0.5\"/><circle cx=\"191\" cy=\"134\" r=\"22\" fill=\"{{furDark}}\" opacity=\"0.5\"/><circle cx=\"78\" cy=\"100\" r=\"26\" fill=\"{{furLight}}\"/><circle cx=\"100\" cy=\"76\" r=\"26\" fill=\"{{furLight}}\"/><circle cx=\"128\" cy=\"66\" r=\"26\" fill=\"{{furLight}}\"/><circle cx=\"156\" cy=\"76\" r=\"26\" fill=\"{{furLight}}\"/><circle cx=\"178\" cy=\"100\" r=\"26\" fill=\"{{furLight}}\"/><circle cx=\"68\" cy=\"130\" r=\"22\" fill=\"{{furLight}}\"/><circle cx=\"188\" cy=\"130\" r=\"22\" fill=\"{{furLight}}\"/></g>",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 162,
+      "scale": 0.85
+     },
+     "muzzleAnchor": {
+      "x": 128,
+      "y": 172,
+      "scale": 0.85
+     },
+     "half": "M124 92A53 65 0 0 0 124 222Z"
+    },
+    {
+     "id": "farm-head-horse",
+     "svg": "<g><path d=\"M84 70C80 46 88 24 98 16C106 30 108 52 104 72Z\" fill=\"{{furDark}}\" transform=\"translate(3 4)\"/><path d=\"M84 70C80 46 88 24 98 16C106 30 108 52 104 72Z\" fill=\"{{fur}}\"/><path d=\"M172 70C176 46 168 24 158 16C150 30 148 52 152 72Z\" fill=\"{{furDark}}\" transform=\"translate(-3 4)\"/><path d=\"M172 70C176 46 168 24 158 16C150 30 148 52 152 72Z\" fill=\"{{fur}}\"/><path d=\"M128 246C98 246 84 226 84 200C84 170 78 140 80 110C82 76 102 58 128 58C154 58 174 76 176 110C178 140 172 170 172 200C172 226 158 246 128 246Z\" fill=\"{{furDark}}\" transform=\"translate(5 6)\"/><path d=\"M128 246C98 246 84 226 84 200C84 170 78 140 80 110C82 76 102 58 128 58C154 58 174 76 176 110C178 140 172 170 172 200C172 226 158 246 128 246Z\" fill=\"{{fur}}\"/><ellipse cx=\"92\" cy=\"112\" rx=\"16\" ry=\"8\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 92 112)\"/><ellipse cx=\"128\" cy=\"214\" rx=\"44\" ry=\"32\" fill=\"{{furLight}}\"/><path d=\"M100 62C110 46 146 46 156 62C150 80 138 92 128 98C118 92 106 80 100 62Z\" fill=\"{{furDark}}\"/></g>",
+     "weight": 2,
+     "faceAnchor": {
+      "x": 128,
+      "y": 130,
+      "scale": 0.95
+     },
+     "muzzleAnchor": {
+      "x": 128,
+      "y": 194,
+      "scale": 0.9
+     },
+     "half": "M128 58C102 58 82 76 80 110C78 140 84 170 84 200C84 226 98 246 128 246Z"
+    }
+   ],
+   "pattern": [
+    {
+     "id": "farm-pattern-plain",
+     "svg": "",
+     "weight": 3
+    },
+    {
+     "id": "farm-pattern-blaze",
+     "weight": 2,
+     "svg": "<g><path d=\"M128 92C134 120 136 150 140 196C134 204 122 204 116 196C120 150 122 120 128 92Z\" fill=\"{{furLight}}\"/></g>"
+    },
+    {
+     "id": "farm-pattern-spots",
+     "svg": "<g><circle cx=\"98\" cy=\"110\" r=\"9\" fill=\"{{furDark}}\"/><circle cx=\"160\" cy=\"168\" r=\"10\" fill=\"{{furDark}}\"/><circle cx=\"94\" cy=\"190\" r=\"7\" fill=\"{{furDark}}\"/></g>"
+    }
+   ],
+   "eyes": [
+    {
+     "id": "eyes-dot",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"158\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"161.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+    },
+    {
+     "id": "eyes-round",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"103.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"163.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "eyes-sleepy",
+     "svg": "<g><path d=\"M84 138A14 14 0 0 0 112 138Z\" fill=\"#44403C\"/><path d=\"M144 138A14 14 0 0 0 172 138Z\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "eyes-calm",
+     "svg": "<g><path d=\"M86 138Q98 150 110 138M146 138Q158 150 170 138\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-happy",
+     "svg": "<g><path d=\"M86 144Q98 130 110 144M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-big",
+     "svg": "<g><circle cx=\"98\" cy=\"138\" r=\"19\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"138\" r=\"19\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"140\" r=\"13\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"140\" r=\"13\" fill=\"#44403C\"/><circle cx=\"104\" cy=\"135\" r=\"5\" fill=\"#FFFFFF\"/><circle cx=\"164\" cy=\"135\" r=\"5\" fill=\"#FFFFFF\"/><circle cx=\"96\" cy=\"145\" r=\"2.5\" fill=\"#FFFFFF\"/><circle cx=\"156\" cy=\"145\" r=\"2.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-nostrils",
+     "svg": "<g><circle cx=\"120\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/><circle cx=\"136\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "nose-farm-wide",
+     "svg": "<g><circle cx=\"112\" cy=\"160\" r=\"6\" fill=\"#44403C\" opacity=\"0.6\"/><circle cx=\"144\" cy=\"160\" r=\"6\" fill=\"#44403C\" opacity=\"0.6\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "mouth-smile",
+     "svg": "<g><path d=\"M114 180Q128 194 142 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "mouth-neutral",
+     "svg": "<g><path d=\"M118 186L138 186\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-w",
+     "svg": "<g><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ],
+   "accessory": [
+    {
+     "id": "acc-none",
+     "svg": "",
+     "weight": 14
+    },
+    {
+     "id": "acc-collar",
+     "svg": "<g><path d=\"M58 212Q128 248 198 212L202 228Q128 266 54 228Z\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"246\" r=\"10\" fill=\"#E2B85C\"/></g>"
+    },
+    {
+     "id": "acc-bow",
+     "svg": "<g><path d=\"M128 228L94 210C88 222 88 236 94 248Z\" fill=\"{{accent}}\"/><path d=\"M128 228L162 210C168 222 168 236 162 248Z\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"#44403C\" opacity=\"0.12\"/></g>"
+    },
+    {
+     "id": "acc-bandana",
+     "svg": "<g><path d=\"M64 206Q128 232 192 206C184 236 160 254 128 258C96 254 72 236 64 206Z\" fill=\"{{accent}}\"/><circle cx=\"108\" cy=\"228\" r=\"4\" fill=\"#FFFFFF\" opacity=\"0.5\"/><circle cx=\"142\" cy=\"234\" r=\"4\" fill=\"#FFFFFF\" opacity=\"0.5\"/><circle cx=\"124\" cy=\"246\" r=\"3\" fill=\"#FFFFFF\" opacity=\"0.5\"/></g>"
+    },
+    {
+     "id": "acc-bandage",
+     "svg": "<g><rect x=\"146\" y=\"88\" width=\"44\" height=\"16\" rx=\"8\" fill=\"#EBCFA6\" transform=\"rotate(-18 168 96)\"/><rect x=\"161\" y=\"88\" width=\"14\" height=\"16\" rx=\"0\" fill=\"#DDBB8C\" transform=\"rotate(-18 168 96)\"/></g>"
+    }
+   ]
+  },
+  "other": {
+   "label": "Genel",
+   "layers": [
+    "background",
+    "head",
+    "eyes",
+    "nose",
+    "mouth",
+    "accessory"
+   ],
+   "head": [
+    {
+     "id": "other-head-bear",
+     "svg": "<g><circle cx=\"65\" cy=\"91\" r=\"26\" fill=\"{{furDark}}\"/><circle cx=\"62\" cy=\"88\" r=\"26\" fill=\"{{fur}}\"/><circle cx=\"62\" cy=\"88\" r=\"14\" fill=\"{{furLight}}\"/><circle cx=\"197\" cy=\"91\" r=\"26\" fill=\"{{furDark}}\"/><circle cx=\"194\" cy=\"88\" r=\"26\" fill=\"{{fur}}\"/><circle cx=\"194\" cy=\"88\" r=\"14\" fill=\"{{furLight}}\"/><ellipse cx=\"128\" cy=\"152\" rx=\"90\" ry=\"80\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"147\" rx=\"85\" ry=\"75\" fill=\"{{fur}}\"/><ellipse cx=\"74\" cy=\"142.4\" rx=\"21.6\" ry=\"10.8\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 74 142.4)\"/><ellipse cx=\"128\" cy=\"186\" rx=\"40\" ry=\"30\" fill=\"{{furLight}}\"/></g>",
+     "weight": 3,
+     "half": "M124 72A85 75 0 0 0 124 222Z"
+    },
+    {
+     "id": "other-head-blob",
+     "svg": "<g><ellipse cx=\"128\" cy=\"146\" rx=\"96\" ry=\"90\" fill=\"{{furDark}}\"/><ellipse cx=\"124\" cy=\"141\" rx=\"91\" ry=\"85\" fill=\"{{fur}}\"/><ellipse cx=\"70.4\" cy=\"135.2\" rx=\"23\" ry=\"11.5\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 70.4 135.2)\"/><ellipse cx=\"98\" cy=\"184\" rx=\"22\" ry=\"14\" fill=\"{{furLight}}\"/><ellipse cx=\"158\" cy=\"184\" rx=\"22\" ry=\"14\" fill=\"{{furLight}}\"/></g>",
+     "weight": 2,
+     "half": "M124 56A91 85 0 0 0 124 226Z"
+    },
+    {
+     "id": "other-head-paw",
+     "svg": "<g><path d=\"M128 236C96 236 68 220 68 192C68 166 98 148 128 148C158 148 188 166 188 192C188 220 160 236 128 236Z\" fill=\"{{furDark}}\" transform=\"translate(5 6)\"/><path d=\"M128 236C96 236 68 220 68 192C68 166 98 148 128 148C158 148 188 166 188 192C188 220 160 236 128 236Z\" fill=\"{{fur}}\"/><ellipse cx=\"94\" cy=\"172\" rx=\"14\" ry=\"7\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-50 94 172)\"/><ellipse cx=\"68\" cy=\"123\" rx=\"22\" ry=\"28\" fill=\"{{furDark}}\" transform=\"rotate(-22 68 123)\"/><ellipse cx=\"64\" cy=\"118\" rx=\"22\" ry=\"28\" fill=\"{{fur}}\" transform=\"rotate(-22 64 118)\"/><ellipse cx=\"57.4\" cy=\"108.2\" rx=\"7.7\" ry=\"5.6\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-52 57.4 108.2)\"/><ellipse cx=\"108\" cy=\"83\" rx=\"22\" ry=\"30\" fill=\"{{furDark}}\" transform=\"rotate(-6 108 83)\"/><ellipse cx=\"104\" cy=\"78\" rx=\"22\" ry=\"30\" fill=\"{{fur}}\" transform=\"rotate(-6 104 78)\"/><ellipse cx=\"97.4\" cy=\"67.5\" rx=\"7.7\" ry=\"6\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-36 97.4 67.5)\"/><ellipse cx=\"156\" cy=\"83\" rx=\"22\" ry=\"30\" fill=\"{{furDark}}\" transform=\"rotate(6 156 83)\"/><ellipse cx=\"152\" cy=\"78\" rx=\"22\" ry=\"30\" fill=\"{{fur}}\" transform=\"rotate(6 152 78)\"/><ellipse cx=\"145.4\" cy=\"67.5\" rx=\"7.7\" ry=\"6\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-24 145.4 67.5)\"/><ellipse cx=\"196\" cy=\"123\" rx=\"22\" ry=\"28\" fill=\"{{furDark}}\" transform=\"rotate(22 196 123)\"/><ellipse cx=\"192\" cy=\"118\" rx=\"22\" ry=\"28\" fill=\"{{fur}}\" transform=\"rotate(22 192 118)\"/><ellipse cx=\"185.4\" cy=\"108.2\" rx=\"7.7\" ry=\"5.6\" fill=\"{{furLight}}\" opacity=\"0.6\" transform=\"rotate(-8 185.4 108.2)\"/></g>",
+     "weight": 2,
+     "faceless": true
+    }
+   ],
+   "eyes": [
+    {
+     "id": "eyes-dot",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"158\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"161.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+    },
+    {
+     "id": "eyes-round",
+     "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"103.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"163.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    },
+    {
+     "id": "eyes-happy",
+     "svg": "<g><path d=\"M86 144Q98 130 110 144M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-calm",
+     "svg": "<g><path d=\"M86 138Q98 150 110 138M146 138Q158 150 170 138\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "eyes-sleepy",
+     "svg": "<g><path d=\"M84 138A14 14 0 0 0 112 138Z\" fill=\"#44403C\"/><path d=\"M144 138A14 14 0 0 0 172 138Z\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "eyes-big",
+     "svg": "<g><circle cx=\"98\" cy=\"138\" r=\"19\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"138\" r=\"19\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"140\" r=\"13\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"140\" r=\"13\" fill=\"#44403C\"/><circle cx=\"104\" cy=\"135\" r=\"5\" fill=\"#FFFFFF\"/><circle cx=\"164\" cy=\"135\" r=\"5\" fill=\"#FFFFFF\"/><circle cx=\"96\" cy=\"145\" r=\"2.5\" fill=\"#FFFFFF\"/><circle cx=\"156\" cy=\"145\" r=\"2.5\" fill=\"#FFFFFF\"/></g>",
+     "sclera": true
+    }
+   ],
+   "nose": [
+    {
+     "id": "nose-round",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"13\" ry=\"9.5\" fill=\"#44403C\"/><ellipse cx=\"123\" cy=\"157\" rx=\"4\" ry=\"2.5\" fill=\"#FFFFFF\" opacity=\"0.35\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "nose-dot",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"9\" ry=\"6.5\" fill=\"#44403C\"/></g>"
+    },
+    {
+     "id": "nose-button",
+     "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"10\" ry=\"7\" fill=\"#C98579\"/></g>"
+    }
+   ],
+   "mouth": [
+    {
+     "id": "mouth-smile",
+     "svg": "<g><path d=\"M114 180Q128 194 142 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>",
+     "weight": 2
+    },
+    {
+     "id": "mouth-w",
+     "svg": "<g><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    },
+    {
+     "id": "mouth-neutral",
+     "svg": "<g><path d=\"M118 186L138 186\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+    }
+   ]
+  }
+ },
+ "shared": {
+  "eyes": [
+   {
+    "id": "eyes-dot",
+    "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"158\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"161.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>"
+   },
+   {
+    "id": "eyes-round",
+    "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"140\" r=\"16\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"141\" r=\"10\" fill=\"#44403C\"/><circle cx=\"103.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/><circle cx=\"163.5\" cy=\"137.5\" r=\"3.5\" fill=\"#FFFFFF\"/></g>",
+    "sclera": true
+   },
+   {
+    "id": "eyes-almond",
+    "svg": "<g><path d=\"M80 142C88 128 108 128 116 142C108 153 88 153 80 142Z\" fill=\"#F4E7BF\"/><path d=\"M140 142C148 128 168 128 176 142C168 153 148 153 140 142Z\" fill=\"#F4E7BF\"/><ellipse cx=\"98\" cy=\"141\" rx=\"5.5\" ry=\"10\" fill=\"#44403C\"/><ellipse cx=\"158\" cy=\"141\" rx=\"5.5\" ry=\"10\" fill=\"#44403C\"/></g>",
+    "sclera": true
+   },
+   {
+    "id": "eyes-sleepy",
+    "svg": "<g><path d=\"M84 138A14 14 0 0 0 112 138Z\" fill=\"#44403C\"/><path d=\"M144 138A14 14 0 0 0 172 138Z\" fill=\"#44403C\"/></g>"
+   },
+   {
+    "id": "eyes-wink",
+    "svg": "<g><circle cx=\"98\" cy=\"140\" r=\"11\" fill=\"#44403C\"/><circle cx=\"101.5\" cy=\"136.5\" r=\"3.5\" fill=\"#FFFFFF\"/><path d=\"M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+   },
+   {
+    "id": "eyes-happy",
+    "svg": "<g><path d=\"M86 144Q98 130 110 144M146 144Q158 130 170 144\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+   },
+   {
+    "id": "eyes-calm",
+    "svg": "<g><path d=\"M86 138Q98 150 110 138M146 138Q158 150 170 138\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+   },
+   {
+    "id": "eyes-big",
+    "svg": "<g><circle cx=\"98\" cy=\"138\" r=\"19\" fill=\"#FFFCF7\"/><circle cx=\"158\" cy=\"138\" r=\"19\" fill=\"#FFFCF7\"/><circle cx=\"100\" cy=\"140\" r=\"13\" fill=\"#44403C\"/><circle cx=\"160\" cy=\"140\" r=\"13\" fill=\"#44403C\"/><circle cx=\"104\" cy=\"135\" r=\"5\" fill=\"#FFFFFF\"/><circle cx=\"164\" cy=\"135\" r=\"5\" fill=\"#FFFFFF\"/><circle cx=\"96\" cy=\"145\" r=\"2.5\" fill=\"#FFFFFF\"/><circle cx=\"156\" cy=\"145\" r=\"2.5\" fill=\"#FFFFFF\"/></g>",
+    "sclera": true
+   }
+  ],
+  "nose": [
+   {
+    "id": "nose-button",
+    "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"10\" ry=\"7\" fill=\"#C98579\"/></g>"
+   },
+   {
+    "id": "nose-dot",
+    "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"9\" ry=\"6.5\" fill=\"#44403C\"/></g>"
+   },
+   {
+    "id": "nose-bunny",
+    "svg": "<g><path d=\"M119 156C119 151 137 151 137 156C137 161 132 165 128 165C124 165 119 161 119 156Z\" fill=\"#C98579\"/><path d=\"M128 165L128 172\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.6\"/></g>"
+   },
+   {
+    "id": "nose-round",
+    "svg": "<g><ellipse cx=\"128\" cy=\"160\" rx=\"13\" ry=\"9.5\" fill=\"#44403C\"/><ellipse cx=\"123\" cy=\"157\" rx=\"4\" ry=\"2.5\" fill=\"#FFFFFF\" opacity=\"0.35\"/></g>"
+   },
+   {
+    "id": "nose-nostrils",
+    "svg": "<g><circle cx=\"120\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/><circle cx=\"136\" cy=\"160\" r=\"3.5\" fill=\"#44403C\" opacity=\"0.7\"/></g>"
+   }
+  ],
+  "mouth": [
+   {
+    "id": "mouth-smile",
+    "svg": "<g><path d=\"M114 180Q128 194 142 180\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+   },
+   {
+    "id": "mouth-w",
+    "svg": "<g><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+   },
+   {
+    "id": "mouth-neutral",
+    "svg": "<g><path d=\"M118 186L138 186\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+   },
+   {
+    "id": "mouth-open",
+    "svg": "<g><path d=\"M112 178Q128 208 144 178Q128 184 112 178Z\" fill=\"#44403C\"/><ellipse cx=\"128\" cy=\"195\" rx=\"9\" ry=\"5.5\" fill=\"#D98A7E\"/></g>"
+   },
+   {
+    "id": "mouth-tongue",
+    "svg": "<g><path d=\"M119 182C119 200 123 206 128 206C133 206 137 200 137 182Z\" fill=\"#D98A7E\"/><path d=\"M110 176Q119 190 128 177Q137 190 146 176\" fill=\"none\" stroke=\"#44403C\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>"
+   },
+   {
+    "id": "mouth-surprised",
+    "svg": "<g><ellipse cx=\"128\" cy=\"188\" rx=\"8\" ry=\"10\" fill=\"#44403C\"/></g>"
+   }
+  ],
+  "accessory": [
+   {
+    "id": "acc-none",
+    "svg": "",
+    "weight": 14
+   },
+   {
+    "id": "acc-collar",
+    "svg": "<g><path d=\"M58 212Q128 248 198 212L202 228Q128 266 54 228Z\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"246\" r=\"10\" fill=\"#E2B85C\"/></g>"
+   },
+   {
+    "id": "acc-bow",
+    "svg": "<g><path d=\"M128 228L94 210C88 222 88 236 94 248Z\" fill=\"{{accent}}\"/><path d=\"M128 228L162 210C168 222 168 236 162 248Z\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"{{accent}}\"/><circle cx=\"128\" cy=\"229\" r=\"9\" fill=\"#44403C\" opacity=\"0.12\"/></g>"
+   },
+   {
+    "id": "acc-bandana",
+    "svg": "<g><path d=\"M64 206Q128 232 192 206C184 236 160 254 128 258C96 254 72 236 64 206Z\" fill=\"{{accent}}\"/><circle cx=\"108\" cy=\"228\" r=\"4\" fill=\"#FFFFFF\" opacity=\"0.5\"/><circle cx=\"142\" cy=\"234\" r=\"4\" fill=\"#FFFFFF\" opacity=\"0.5\"/><circle cx=\"124\" cy=\"246\" r=\"3\" fill=\"#FFFFFF\" opacity=\"0.5\"/></g>"
+   },
+   {
+    "id": "acc-scarf",
+    "svg": "<g><path d=\"M54 210Q128 246 202 210L206 232Q128 270 50 232Z\" fill=\"{{accent}}\"/><path d=\"M150 232L172 228L178 256L148 256Z\" fill=\"{{accent}}\"/><path d=\"M150 232L172 228L178 256L148 256Z\" fill=\"#44403C\" opacity=\"0.12\"/><path d=\"M84 228L88 242M112 236L114 252M144 236L142 252M172 228L168 242\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.35\"/></g>"
+   },
+   {
+    "id": "acc-cone",
+    "svg": "<g><path d=\"M128 10A132 140 0 1 0 128.01 10ZM128 50A100 100 0 1 1 127.99 50Z\" fill=\"#D3E2E9\" opacity=\"0.72\" fill-rule=\"evenodd\"/><ellipse cx=\"128\" cy=\"150\" rx=\"100\" ry=\"100\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"4\" opacity=\"0.6\"/></g>"
+   },
+   {
+    "id": "acc-bandage",
+    "svg": "<g><rect x=\"146\" y=\"88\" width=\"44\" height=\"16\" rx=\"8\" fill=\"#EBCFA6\" transform=\"rotate(-18 168 96)\"/><rect x=\"161\" y=\"88\" width=\"14\" height=\"16\" rx=\"0\" fill=\"#DDBB8C\" transform=\"rotate(-18 168 96)\"/></g>"
+   }
+  ]
+ }
+}

@@ -2,6 +2,8 @@
 
 Vetaryo için kil kıvamında avatarlar: fotoğrafı olmayan her hasta (evcil hayvan) ve her kişi (müşteri, personel) için seed'den her seferinde aynı avatarı üretir. Avatarlar bitmiş resimlerden değil, üst üste takılan SVG parçalarından oluşur.
 
+**Canlı dene:** https://kkerem.github.io/pofuduk/
+
 <p align="center"><img src="docs/hero.svg" width="100%" alt="Sekiz hayvan ve sekiz insan avatarı"></p>
 
 - **Hayvanlar:** 13 tür, 290 parça. Türler: kedi, köpek, kuş, tavşan, kemirgen, kirpi, gelincik, kaplumbağa, kertenkele, yılan, balık, çiftlik ve genel.
@@ -48,6 +50,8 @@ Bu görseller `node scripts/docs.mjs` ile üretilir.
 | `src/pets.mjs`, `src/humans.mjs`, `src/shared.mjs` | Parçaların kaynağı; JSON buradan üretilir |
 | `scripts/build.mjs` | JSON'u üretir, kuralları denetler, `dist/preview.html` yazar |
 | `scripts/docs.mjs` | README görsellerini (`docs/*.svg`) üretir |
+| `scripts/site.mjs` | Tanıtım sitesi için `docs/render.js` ve JSON kopyalarını hazırlar |
+| `docs/index.html` | Tanıtım sitesi (GitHub Pages) |
 
 ## Kullanım
 
