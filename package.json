@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Kil kıvamında, parça tabanlı, seed'den deterministik hayvan ve insan avatarları (SVG).",
   "type": "module",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "main": "src/render.ts",
   "files": ["src", "dist/pet-avatars.json", "dist/human-avatars.json"],

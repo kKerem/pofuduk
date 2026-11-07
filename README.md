@@ -105,3 +105,7 @@ node scripts/build.mjs --sheets   # + tasarım tuvali için dist/sheets/*.svg
 Derleme her parçayı denetler: tek `<g>`, izin verilen etiketler, `class`/`style`/`url(` yok, her arka saçın bir ön eşi var. İhlal varsa durur.
 
 Bilinen sınır: briften uzun parçalar var. Kafa parçaları hacim katmanlarıyla birlikte 300–1600 karakter tutuyor; en uzunu koyun kafası (yün yumakları).
+
+## Lisans
+
+MIT. Ayrıntılar [LICENSE](LICENSE) dosyasında.
