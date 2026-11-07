@@ -1,0 +1,15 @@
+{
+  "name": "pofuduk",
+  "version": "1.0.0",
+  "description": "Kil kıvamında, parça tabanlı, seed'den deterministik hayvan ve insan avatarları (SVG).",
+  "type": "module",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "src/render.ts",
+  "files": ["src", "dist/pet-avatars.json", "dist/human-avatars.json"],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "sheets": "node scripts/build.mjs --sheets"
+  },
+  "engines": { "node": ">=22.18" }
+}
